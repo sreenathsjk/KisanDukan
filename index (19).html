@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="FarmCircle connects farmers, buyers and communities to build a fairer, stronger agricultural economy. Together we grow.">
+<title>FarmCircle — Together We Grow</title>
+<meta name="theme-color" content="#153d2b">
+<meta property="og:type" content="website"><meta property="og:title" content="FarmCircle — Together We Grow"><meta property="og:description" content="FarmCircle connects farmers, buyers and communities to build a fairer, stronger agricultural economy.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🌱%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--green:#153d2b;--green2:#2f8d50;--lime:#d8ed9a;--cream:#f8f7f0;--orange:#e99446;--ink:#14251b;--muted:#68766d;--line:#e5e9e0;--white:#fff;--radius:24px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:'DM Sans',sans-serif}h1,h2,h3,.brand{font-family:Manrope,sans-serif;letter-spacing:-.04em}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.container{width:min(1160px,calc(100% - 40px));margin:auto}.nav{height:78px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;background:rgba(248,247,240,.9);backdrop-filter:blur(18px);z-index:20;border-bottom:1px solid rgba(20,37,27,.06)}.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:800;font-size:24px;display:flex;align-items:center;gap:9px}.brand-mark{width:32px;height:32px;background:var(--green);border-radius:11px;display:grid;place-items:center;color:var(--lime);font-size:17px}.links{display:flex;align-items:center;gap:28px;color:#4f6156;font-size:14px;font-weight:600}.links a:hover{color:var(--green2)}.btn{border:0;cursor:pointer;border-radius:999px;padding:14px 21px;font-weight:700;font-size:14px;transition:.25s;display:inline-flex;align-items:center;justify-content:center;gap:8px}.btn-dark{background:var(--green);color:#fff}.btn-dark:hover{background:#24583d;transform:translateY(-2px)}.btn-light{background:#fff;color:var(--green);border:1px solid #e6eadf}.btn-light:hover{transform:translateY(-2px);box-shadow:0 8px 20px #1a3b2012}.menu-btn{display:none;background:none;border:0;font-size:24px;color:var(--green)}.hero{padding:64px 0 74px}.hero-grid{display:grid;grid-template-columns:1fr 1.05fr;align-items:center;gap:54px}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--green2);font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.eyebrow:before{content:'';width:7px;height:7px;background:var(--orange);border-radius:50%}.hero h1{font-size:clamp(42px,5.6vw,72px);line-height:1.04;margin:20px 0 22px;font-weight:800}.hero h1 em{font-style:normal;color:var(--green2)}.hero-copy{font-size:17px;line-height:1.75;color:var(--muted);max-width:530px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.hero-note{margin-top:26px;color:#718078;font-size:13px;display:flex;align-items:center;gap:10px}.avatars{display:flex}.avatars span{width:28px;height:28px;border-radius:50%;border:2px solid var(--cream);background:#e6c59a;margin-left:-7px;display:grid;place-items:center;font-size:12px}.avatars span:first-child{margin-left:0}.hero-visual{height:520px;position:relative;border-radius:32px;overflow:hidden;background:#c6d9b5}.hero-visual>img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.92)}.hero-visual:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,#18332366)}.floating{position:absolute;z-index:2;background:#fff;padding:16px 18px;border-radius:18px;box-shadow:0 15px 45px #132d201b}.float-top{top:24px;left:24px}.float-bottom{bottom:24px;right:24px}.float-title{font-size:12px;color:var(--muted);font-weight:600}.float-value{font-size:18px;font-weight:800;margin-top:5px;color:var(--green)}.float-row{display:flex;align-items:center;gap:11px}.mini-icon{height:38px;width:38px;border-radius:13px;background:#eaf4dc;display:grid;place-items:center;font-size:20px}.section{padding:88px 0}.section-head{max-width:680px;margin-bottom:38px}.section-head h2{font-size:clamp(30px,4vw,48px);line-height:1.12;margin:14px 0}.section-head p{font-size:16px;color:var(--muted);line-height:1.7}.pillars{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.pillar{background:white;padding:25px;border-radius:22px;border:1px solid #edf0e8;min-height:210px;transition:.25s}.pillar:hover{transform:translateY(-5px);box-shadow:0 16px 35px #173d2810}.pillar-icon{width:46px;height:46px;border-radius:15px;background:#edf4e5;display:grid;place-items:center;font-size:22px}.pillar h3{font-size:18px;margin:18px 0 9px}.pillar p{font-size:14px;line-height:1.6;color:var(--muted);margin:0}.dark-section{background:var(--green);color:#fff}.dark-section .section-head p{color:#c4d3c9}.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;position:relative}.step{padding:22px 18px;border:1px solid #ffffff20;border-radius:20px;background:#ffffff08}.step-num{font-size:12px;color:var(--lime);font-weight:800;letter-spacing:.1em}.step-emoji{font-size:30px;margin:17px 0}.step h3{font-size:17px;margin:0 0 9px}.step p{font-size:13px;color:#c8d6cd;line-height:1.55;margin:0}.split{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.photo-card{border-radius:28px;overflow:hidden;min-height:410px;position:relative}.photo-card img{width:100%;height:100%;min-height:410px;object-fit:cover;display:block}.photo-label{position:absolute;bottom:18px;left:18px;background:white;border-radius:16px;padding:15px 17px;font-weight:700;font-size:14px}.split-copy h2{font-size:clamp(30px,4vw,46px);line-height:1.12;margin:15px 0}.split-copy p{color:var(--muted);line-height:1.75}.check-list{list-style:none;padding:0;margin:24px 0;display:grid;gap:13px}.check-list li{display:flex;gap:10px;align-items:flex-start;font-weight:600;font-size:14px}.check{color:var(--green2);font-weight:900}.market{background:#f0f2e9}.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}.filter{border:1px solid #dfe6d9;background:transparent;padding:10px 15px;border-radius:999px;font-size:13px;font-weight:700;color:#5c6b60;cursor:pointer}.filter.active{background:var(--green);color:white;border-color:var(--green)}.catalog-tools{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:18px}.catalog-search{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid #dfe6d9;border-radius:999px;padding:0 15px;min-width:min(320px,100%);height:44px;color:#758178}.catalog-search input{border:0;outline:0;background:transparent;width:100%;min-width:0;color:var(--ink)}.catalog-count{font-size:13px;color:var(--muted);margin:0 0 18px}.empty-catalog{grid-column:1/-1;background:#fff;border-radius:18px;padding:30px;text-align:center;color:var(--muted)}.products{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.product{background:white;border-radius:22px;overflow:hidden;border:1px solid #e8ece4}.product-image{height:205px;position:relative;overflow:hidden}.product-fallback{display:grid;position:absolute;inset:0;place-items:center;font-size:68px;background:#e7efdd}.product-image.has-image .product-fallback{display:none}.product-image.image-failed .product-fallback{display:grid}.product-image.image-failed img{display:none}.product-image img{width:100%;height:100%;object-fit:cover;transition:transform .4s;opacity:0}.product-image.has-image img{opacity:1}.product:hover img{transform:scale(1.05)}.product-tag{position:absolute;top:13px;left:13px;background:#fff;border-radius:999px;padding:7px 11px;font-size:11px;font-weight:800}.product-body{padding:19px}.product-title-row{display:flex;justify-content:space-between;align-items:center;gap:8px}.product h3{margin:0;font-size:20px}.grade{font-size:11px;background:#eef5e8;color:#3a794c;padding:6px 9px;border-radius:999px;font-weight:800}.product-meta{font-size:13px;color:var(--muted);margin:10px 0 17px}.product-foot{display:flex;justify-content:space-between;align-items:center}.price{font-weight:800;color:var(--green);font-size:16px}.price small{font-weight:500;color:var(--muted);font-size:12px}.product .btn{padding:10px 13px;font-size:12px}.impact{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:32px}.impact-item{padding:22px;border-radius:18px;background:#ffffff12;border:1px solid #ffffff15}.impact-item strong{font-size:30px;font-family:Manrope;display:block;color:var(--lime)}.impact-item span{font-size:13px;color:#c8d6cc}.stories{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}.story-main{border-radius:26px;overflow:hidden;position:relative;min-height:420px}.story-main img{width:100%;height:100%;object-fit:cover;position:absolute}.story-main:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,#112c20dd,transparent 70%)}.story-content{position:absolute;bottom:25px;left:25px;right:25px;color:#fff;z-index:1}.story-content h3{font-size:30px;margin:10px 0}.story-content p{color:#e1e8e1;line-height:1.6;max-width:500px}.story-side{display:grid;gap:18px}.story-small{background:#e8eddd;border-radius:24px;padding:24px;display:flex;flex-direction:column;justify-content:space-between}.story-small:nth-child(2){background:#f1e3cf}.story-small .big-emoji{font-size:35px}.story-small h3{font-size:21px;margin:18px 0 8px}.story-small p{color:var(--muted);font-size:14px;line-height:1.6}.join{background:#e8efdd}.join-box{display:grid;grid-template-columns:1fr .9fr;gap:45px;background:var(--green);color:#fff;border-radius:30px;padding:45px;align-items:center}.join-box h2{font-size:clamp(32px,4vw,48px);margin:12px 0;line-height:1.1}.join-box p{color:#c8d6cd;line-height:1.65}.join-options{display:grid;grid-template-columns:1fr 1fr;gap:11px}.join-option{padding:19px;background:#ffffff10;border:1px solid #ffffff22;border-radius:18px;cursor:pointer;text-align:left;color:white;transition:.2s}.join-option:hover{background:#ffffff20;transform:translateY(-2px)}.join-option span{font-size:23px;display:block;margin-bottom:10px}.join-option strong{font-size:14px}.join-option small{display:block;color:#c5d4ca;margin-top:6px;font-size:12px}.footer{padding:42px 0 25px;background:#102d20;color:#fff}.footer-top{display:flex;justify-content:space-between;gap:30px;align-items:flex-start;padding-bottom:28px;border-bottom:1px solid #ffffff20}.footer p{color:#bdcfc3;max-width:350px;line-height:1.65;font-size:14px}.footer-links{display:flex;gap:24px;flex-wrap:wrap;color:#d7e1d9;font-size:13px}.copyright{padding-top:22px;font-size:12px;color:#9fb5a5;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}.modal-backdrop{position:fixed;inset:0;background:#071a10b8;backdrop-filter:blur(5px);display:none;align-items:center;justify-content:center;z-index:100;padding:18px}.modal-backdrop.show{display:flex}.modal{background:var(--cream);width:min(520px,100%);max-height:92vh;overflow:auto;border-radius:25px;padding:28px;position:relative}.close{position:absolute;right:17px;top:17px;border:0;background:#e7ebdf;border-radius:50%;width:35px;height:35px;font-size:20px;cursor:pointer}.modal h2{font-size:28px;margin:6px 0 8px}.modal>p{color:var(--muted);line-height:1.55;font-size:14px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:12px;font-weight:700;color:#536258}.field input,.field select,.field textarea{border:1px solid #dce4d8;background:white;border-radius:12px;padding:12px;color:var(--ink);outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--green2);box-shadow:0 0 0 3px #36a65718}.form-submit{width:100%;margin-top:16px}.success{display:none;text-align:center;padding:30px 12px}.success.show{display:block}.success-icon{width:66px;height:66px;margin:auto;background:#e2f2d8;border-radius:50%;display:grid;place-items:center;font-size:30px}.success h3{font-size:25px;margin:16px 0 8px}.success p{color:var(--muted);line-height:1.6}.toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,20px);background:var(--green);color:white;padding:13px 18px;border-radius:999px;font-size:13px;box-shadow:0 10px 30px #142d2025;opacity:0;pointer-events:none;transition:.3s;z-index:110}.toast.show{opacity:1;transform:translate(-50%,0)}.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}.reveal.visible{opacity:1;transform:none}
+@media(max-width:900px){.hero-grid,.split,.join-box{grid-template-columns:1fr}.hero-grid{gap:30px}.hero-visual{height:430px}.pillars{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:repeat(3,1fr)}.products{grid-template-columns:repeat(2,1fr)}.stories{grid-template-columns:1fr}.story-side{grid-template-columns:1fr 1fr}.join-box{gap:25px}.links{gap:16px}}
+@media(max-width:650px){.product-fallback{font-size:64px}.catalog-tools{align-items:stretch}.catalog-search{width:100%;min-width:0}.container{width:min(100% - 28px,1160px)}.nav{height:68px}.brand{font-size:21px}.links{display:none;position:absolute;top:68px;left:0;right:0;background:var(--cream);padding:20px;flex-direction:column;align-items:stretch;border-bottom:1px solid var(--line)}.links.open{display:flex}.links .btn{width:100%}.menu-btn{display:block}.nav-cta{display:none}.hero{padding:40px 0 55px}.hero h1{font-size:44px}.hero-copy{font-size:15px}.hero-visual{height:360px;border-radius:24px}.float-top{top:14px;left:14px}.float-bottom{bottom:14px;right:14px}.floating{padding:12px 14px}.section{padding:60px 0}.section-head h2{font-size:34px}.pillars{gap:10px}.pillar{padding:18px;min-height:190px}.steps{grid-template-columns:1fr 1fr}.step:last-child{grid-column:1/-1}.products{grid-template-columns:1fr}.product-image{height:220px}.impact{grid-template-columns:1fr 1fr}.impact-item strong{font-size:25px}.photo-card,.photo-card img{min-height:320px}.split{gap:28px}.story-main{min-height:360px}.story-side{grid-template-columns:1fr}.join-box{padding:26px 20px}.join-options{grid-template-columns:1fr 1fr}.footer-top{flex-direction:column}.footer-links{gap:15px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.modal{padding:24px 18px}.copyright{flex-direction:column}.hero-actions .btn{width:100%}}
+.market{display:none;scroll-margin-top:78px}.market.open{display:block}.links a.active{color:var(--green2)}.market-head{display:flex;justify-content:space-between;align-items:flex-start;gap:20px}.close-produce{flex:none;margin-top:6px}.product-fallback{flex-direction:column;gap:6px;align-content:center}.product-fallback>span{font-size:68px;line-height:1}.noimg-note{font-size:12px;font-weight:700;color:#6d7f6f;letter-spacing:.02em}
+.lang-wrap{display:flex;align-items:center;gap:6px;border:1px solid #dfe6d9;background:#fff;border-radius:999px;padding:0 10px 0 12px;height:40px;font-size:15px}.lang-select{border:0;background:transparent;font-weight:700;font-size:13px;color:var(--green);outline:0;max-width:170px;cursor:pointer}.gt-host{position:absolute;left:-9999px;top:0;width:1px;height:1px;overflow:hidden}iframe.skiptranslate,.VIpgJd-ZVi9od-ORHb-OEVmcd,.goog-te-banner-frame{display:none!important}body{top:0!important}.goog-text-highlight{background:none!important;box-shadow:none!important}.goog-tooltip,.goog-tooltip:hover{display:none!important}@media(max-width:650px){.links .lang-wrap{width:100%}.lang-select{width:100%;max-width:none}}
+.photo-card.img-failed,.story-main.img-failed,.hero-visual.img-failed{background:linear-gradient(135deg,#2f8d50,#153d2b)}.img-failed>img{display:none}
+
+/* Admin dashboard + approved farmer listings */
+.admin-link{font-size:12px;color:#a9c1b0;text-decoration:underline;cursor:pointer;background:none;border:0;padding:0}
+.admin-backdrop{position:fixed;inset:0;background:#071a10c9;z-index:150;display:none;padding:14px;overflow:auto}
+.admin-backdrop.show{display:block}.admin-shell{max-width:1120px;margin:20px auto;background:var(--cream);border-radius:24px;overflow:hidden;box-shadow:0 30px 90px #0004}
+.admin-header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px 26px;background:var(--green);color:#fff}.admin-header h2{margin:0;font-size:24px}.admin-header p{margin:5px 0 0;color:#c7d8cc;font-size:13px}.admin-content{padding:24px}.admin-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:22px}.admin-stat{padding:18px;background:#fff;border:1px solid var(--line);border-radius:16px}.admin-stat strong{display:block;font-size:27px;color:var(--green);font-family:Manrope}.admin-stat span{font-size:12px;color:var(--muted)}.admin-filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:15px}.admin-filter{border:1px solid var(--line);background:white;padding:9px 13px;border-radius:999px;font-size:12px;font-weight:700;cursor:pointer}.admin-filter.active{background:var(--green);color:#fff}.admin-records{display:grid;gap:12px}.admin-record{background:#fff;border:1px solid var(--line);border-radius:16px;padding:17px}.admin-record-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.admin-record h3{margin:0 0 6px;font-size:17px}.admin-record p{margin:5px 0;color:var(--muted);font-size:13px;line-height:1.5}.admin-badge{padding:6px 9px;border-radius:999px;font-size:11px;font-weight:800;background:#fff0d8;color:#8c5819;white-space:nowrap}.admin-badge.approved{background:#e6f3e1;color:#327245}.admin-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.admin-actions button{border:0;border-radius:10px;padding:9px 12px;font-weight:700;font-size:12px;cursor:pointer}.approve-btn{background:var(--green);color:white}.reject-btn{background:#fbe8e5;color:#9a352c}.delete-btn{background:#f1f1ed;color:#5b625d}.admin-empty{padding:30px;text-align:center;background:#fff;border-radius:16px;color:var(--muted)}.admin-login{max-width:420px;margin:12vh auto;background:var(--cream);padding:28px;border-radius:22px}.admin-login h2{margin-top:0}.admin-login input{width:100%;padding:13px;border:1px solid var(--line);border-radius:12px;margin:10px 0}.approved-listings{margin-top:30px}.approved-listings h3{font-size:24px;margin:0 0 8px}.approved-listings>p{color:var(--muted);font-size:14px;margin-bottom:16px}.farmer-listing{background:#fff;border:1px solid #e4eadf;border-radius:18px;padding:18px;display:flex;justify-content:space-between;gap:16px;align-items:flex-start;margin-bottom:12px}.farmer-listing h4{margin:0 0 7px;font-size:17px}.farmer-listing p{margin:4px 0;color:var(--muted);font-size:13px}.farmer-listing .btn{white-space:nowrap}.admin-disclaimer{font-size:12px;color:var(--muted);padding:12px 14px;background:#f0f2e9;border-radius:12px;margin-bottom:16px}
+@media(max-width:650px){.admin-stats{grid-template-columns:1fr 1fr}.admin-content{padding:15px}.admin-header{padding:17px}.admin-header h2{font-size:20px}.farmer-listing{flex-direction:column}.farmer-listing .btn{width:100%}}
+
+</style>
+</head>
+<body>
+<nav class="nav"><div class="container nav-inner"><a class="brand notranslate" translate="no" href="#home"><span class="brand-mark">✳</span>FarmCircle</a><div class="links" id="navLinks"><a href="#community">Community</a><a href="#how">How it works</a><a href="#market" id="produceLink">Produce</a><a href="#impact">Our impact</a><label class="lang-wrap notranslate" translate="no">🌐<select id="langSelect" class="lang-select" aria-label="Select language"></select></label><button class="btn btn-dark" onclick="openModal('farmer')">Join as Farmer</button></div><button class="btn btn-dark nav-cta" onclick="openModal('buyer')">Source Produce</button><button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button></div></nav>
+<main id="home">
+<section class="hero"><div class="container hero-grid"><div class="reveal"><div class="eyebrow">A farmer-powered movement</div><h1>Growing together.<br><em>A better future.</em></h1><p class="hero-copy">Connecting farmers directly to markets, businesses, and people—creating stronger opportunities, fairer value, and less waste for every harvest.</p><div class="hero-actions"><button class="btn btn-dark" onclick="openModal('farmer')">Join Our Farmer Community ↗</button><a class="btn btn-light" href="#community">Explore Our Network</a></div><div class="hero-note"><div class="avatars"><span>🌾</span><span>🍅</span><span>🥬</span><span>🤝</span></div>Built on community. Powered by farmers.</div></div><div class="hero-visual reveal"><img data-commons="Sunny green paddy fields with trees and long shadows.jpg|Green rice sheaves planted in a paddy field with long shadows at golden hour in Don Det Laos.jpg|Green river bank, orange clouds and karst mountains at sunrise in Vang Vieng Laos.jpg" alt="Green agricultural fields at sunrise"><div class="floating float-top"><div class="float-row"><div class="mini-icon">🌱</div><div><div class="float-title">Our purpose</div><div class="float-value">Farmers first</div></div></div></div><div class="floating float-bottom"><div class="float-title">A stronger network</div><div class="float-value">Together, we grow ↗</div></div></div></div></section>
+<section class="section" id="community"><div class="container"><div class="section-head reveal"><div class="eyebrow">Our foundation</div><h2>An entire ecosystem.<br>Built around the farmer.</h2><p>When farmers come together, they can unlock better market access, stronger bargaining power, shared infrastructure, and new possibilities.</p></div><div class="pillars"><div class="pillar reveal"><div class="pillar-icon">⚖️</div><h3>Fair Market Access</h3><p>Connect farmers with more buyers and opportunities, not just one route to market.</p></div><div class="pillar reveal"><div class="pillar-icon">🤝</div><h3>Collective Strength</h3><p>Aggregate produce and demand to create a network that works better together.</p></div><div class="pillar reveal"><div class="pillar-icon">🔎</div><h3>Quality & Trust</h3><p>Transparent weighing, grading, sourcing, and communication at every step.</p></div><div class="pillar reveal"><div class="pillar-icon">🌿</div><h3>Sustainable Growth</h3><p>Reduce avoidable waste and build lasting value for farming communities.</p></div></div></div></section>
+<section class="section dark-section" id="how"><div class="container"><div class="section-head reveal"><div class="eyebrow" style="color:var(--lime)">From farm to market</div><h2>One connected journey.<br>More value at every step.</h2><p>Bringing the pieces together—from harvest and aggregation to buyers and the people who enjoy fresh produce.</p></div><div class="steps"><div class="step reveal"><div class="step-num">01 / GROW</div><div class="step-emoji">👨‍🌾</div><h3>Farmers</h3><p>Grow, register crops and share expected harvest details.</p></div><div class="step reveal"><div class="step-num">02 / COLLECT</div><div class="step-emoji">🏘️</div><h3>Local Collection</h3><p>Bring produce together through community collection points.</p></div><div class="step reveal"><div class="step-num">03 / PREPARE</div><div class="step-emoji">📦</div><h3>Grade & Pack</h3><p>Sort, grade, weigh and prepare produce for different buyers.</p></div><div class="step reveal"><div class="step-num">04 / CONNECT</div><div class="step-emoji">🚚</div><h3>Distribution</h3><p>Coordinate reliable movement to local and larger markets.</p></div><div class="step reveal"><div class="step-num">05 / REACH</div><div class="step-emoji">🏪</div><h3>Buyers</h3><p>Supply retailers, businesses, institutions and households.</p></div></div></div></section>
+<section class="section"><div class="container split"><div class="photo-card reveal"><img data-commons="Cherry Tomato Harvest.jpg|A farmer in Kerala 06.jpg|Indian Farmer.JPG" alt="Farmer working with freshly harvested produce"><div class="photo-label">🌾 Your harvest deserves a bigger market</div></div><div class="split-copy reveal"><div class="eyebrow">For our farmers</div><h2>Grow your harvest.<br>Grow your opportunities.</h2><p>FarmCircle is designed to help farmers become part of a wider network—where market connections, collective participation, and transparent information can make every harvest count.</p><ul class="check-list"><li><span class="check">✓</span> Register your crops and expected harvest</li><li><span class="check">✓</span> Connect with potential buyers</li><li><span class="check">✓</span> Discover collection and aggregation opportunities</li><li><span class="check">✓</span> Participate in a farmer-first community</li></ul><button class="btn btn-dark" onclick="openModal('farmer')">Become a Member ↗</button></div></div></section>
+<section class="section market" id="market" aria-hidden="true"><div class="container"><div class="market-head"><div class="section-head reveal"><div class="eyebrow">Explore the produce network</div><h2>Fresh from the fields.<br>Ready for your business.</h2><p>Find the produce your business needs and connect with our network. Listings shown are illustrative examples, not live inventory or prices.</p></div><button class="btn btn-light close-produce" id="closeProduce" type="button">Hide produce ✕</button></div><div class="catalog-tools reveal"><div class="filters"><button class="filter active" data-filter="all">All produce</button><button class="filter" data-filter="vegetables">Vegetables</button><button class="filter" data-filter="fruits">Fruits</button><button class="filter" data-filter="greens">Leafy greens</button></div><label class="catalog-search"><span>⌕</span><input id="produceSearch" type="search" placeholder="Search fruits or vegetables…" aria-label="Search produce"></label></div><p class="catalog-count" id="catalogCount" aria-live="polite"></p><div class="products" id="productGrid"></div><div class="approved-listings" id="approvedFarmerListings"></div><p class="catalog-count" style="margin-top:20px">Photos courtesy of Pexels and Wikimedia contributors.</p></div></section>
+<section class="section dark-section" id="impact"><div class="container"><div class="section-head reveal"><div class="eyebrow" style="color:var(--lime)">Our shared impact</div><h2>Stronger farms.<br>Stronger communities.</h2><p>Our ambition is to build a network where every farmer has a stronger connection to opportunity, and every buyer can source with confidence.</p></div><div class="impact reveal"><div class="impact-item"><strong>∞</strong><span>Possibilities unlocked</span></div><div class="impact-item"><strong>1</strong><span>Connected community</span></div><div class="impact-item"><strong>0</strong><span>Farmers left behind — our aspiration</span></div><div class="impact-item"><strong>100%</strong><span>Commitment to transparency</span></div></div><p style="font-size:12px;color:#a9c1b0;margin-top:15px">Illustrative mission metrics—not verified operating statistics.</p></div></section>
+<section class="section"><div class="container"><div class="section-head reveal"><div class="eyebrow">Beyond the marketplace</div><h2>When the community grows,<br>everyone moves forward.</h2></div><div class="stories"><div class="story-main reveal"><img data-commons="Farmer manually harvesting rice in Raichur, Karnataka.jpg|Women planting seedlings at a paddy field of Assam.jpg|Woman harvesting wheat, Raisen district, Madhya Pradesh, India ggia version.jpg" alt="Farmer harvesting crops in a green field"><div class="story-content"><div class="eyebrow" style="color:var(--lime)">A shared vision</div><h3>From individual harvests to collective opportunity.</h3><p>We believe the future of agriculture is built through connection, trust, and communities that stand together.</p></div></div><div class="story-side"><div class="story-small reveal"><div class="big-emoji">🧺</div><div><h3>Less waste. More value.</h3><p>Better coordination can help produce reach the right buyer at the right time.</p></div></div><div class="story-small reveal"><div class="big-emoji">🌍</div><div><h3>A network that can grow.</h3><p>Start locally. Connect villages. Expand region by region, with farmers at the center.</p></div></div></div></div></div></section>
+<section class="section join" id="join"><div class="container"><div class="join-box reveal"><div><div class="eyebrow" style="color:var(--lime)">Be part of the movement</div><h2>There's a place<br>for you here.</h2><p>Whether you grow, buy, move, or support produce—we're building this community together.</p></div><div class="join-options"><button class="join-option" onclick="openModal('farmer')"><span>👨‍🌾</span><strong>I'm a Farmer</strong><small>Join the community</small></button><button class="join-option" onclick="openModal('buyer')"><span>🛒</span><strong>I'm a Buyer</strong><small>Source fresh produce</small></button><button class="join-option" onclick="openModal('partner')"><span>🚚</span><strong>Distribution Partner</strong><small>Move produce</small></button><button class="join-option" onclick="openModal('center')"><span>🏘️</span><strong>Collection Partner</strong><small>Build locally</small></button></div></div></div></section>
+</main>
+<footer class="footer"><div class="container"><div class="footer-top"><div><a class="brand notranslate" translate="no" href="#home"><span class="brand-mark">✳</span>FarmCircle</a><p>Building a farmer-powered economic network. Together We Grow. Together We Thrive.</p></div><div class="footer-links"><a href="#community">Our Community</a><a href="#how">How it Works</a><a href="#join">Join Us</a><a href="#join" id="contactLink">Contact</a><button class="admin-link" type="button" onclick="openAdmin()">Admin Panel</button></div></div><div class="copyright"><span>© 2026 FarmCircle. A community in the making.</span><span>Farmer-first. Community-powered.</span><span class="notranslate" translate="no">Photos: Wikimedia Commons contributors (CC BY / CC BY-SA)</span></div></div></footer>
+<div class="modal-backdrop" id="modalBackdrop" onclick="backdropClose(event)"><div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="close" onclick="closeModal()" aria-label="Close">×</button><div id="formArea"><div class="eyebrow" id="modalEyebrow">Join the network</div><h2 id="modalTitle">Let's grow together.</h2><p id="modalDesc">Share a few details to help us connect you with the FarmCircle community.</p><form id="joinForm"><input type="text" name="_hp" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0"><div class="form-grid" id="formFields"></div><button class="btn btn-dark form-submit" type="submit">Submit interest ↗</button></form></div><div class="success" id="successArea"><div class="success-icon">✓</div><h3>Thank you for joining!</h3><p>Your registration has been securely submitted to FarmCircle. Our team will review it and contact you.</p><button class="btn btn-dark" onclick="closeModal()">Done</button></div></div></div><div class="toast" id="toast"></div>
+<div class="admin-backdrop" id="adminBackdrop" aria-hidden="true">
+  <div class="admin-login" id="adminLogin">
+    <button class="close" type="button" onclick="closeAdmin()" aria-label="Close admin">×</button>
+    <div class="eyebrow">FarmCircle administration</div><h2>Admin sign in</h2><p>Sign in with your authorized FarmCircle administrator account.</p>
+    <form id="adminLoginForm"><input id="adminEmail" type="email" placeholder="Admin email" autocomplete="username" required><input id="adminPass" type="password" placeholder="Password" autocomplete="current-password" required><button class="btn btn-dark form-submit" type="submit">Secure sign in</button></form><p style="font-size:12px">Administrator accounts must be created in Firebase Authentication and explicitly authorized in Firestore.</p>
+  </div>
+  <div class="admin-shell" id="adminDashboard" style="display:none">
+    <div class="admin-header"><div><h2>FarmCircle Admin</h2><p>Manage registrations and farmer marketplace approvals</p></div><button class="btn btn-light" type="button" onclick="closeAdmin()">Close ×</button></div>
+    <div class="admin-content"><div class="admin-disclaimer">Live Firebase database. Admin-only actions are enforced by Firestore security rules.</div>
+      <div class="admin-stats" id="adminStats"></div>
+      <div class="admin-filters" id="adminFilters"><button class="admin-filter active" data-admin-filter="all">All registrations</button><button class="admin-filter" data-admin-filter="farmer">Farmers</button><button class="admin-filter" data-admin-filter="buyer">Buyers</button><button class="admin-filter" data-admin-filter="partner">Distribution</button><button class="admin-filter" data-admin-filter="center">Collection</button></div>
+      <div class="admin-records" id="adminRecords"></div>
+    </div>
+  </div>
+</div>
+<div id="google_translate_element" class="gt-host"></div>
+<script>
+// ---------- Produce catalogue ----------
+// Each line:  Display name | Wikipedia article title(s) for the photo (";" = fallbacks, tried in order) | emoji
+// Photos come from the lead image of the matching Wikipedia article, so the picture is chosen per product name.
+// If no reliable photo exists, the card shows the product's own emoji tile instead of a wrong picture.
+const catalogData={
+vegetables:`Tomato|Tomato|🍅
+Onion|Onion|🧅
+Potato|Potato|🥔
+Sweet Potato|Sweet potato|🍠
+Garlic|Garlic|🧄
+Ginger|Ginger|🫚
+Green Chilli|Serrano pepper|🌶️
+Red Chilli|Cayenne pepper;Chili pepper|🌶️
+Capsicum|Bell pepper|🫑
+Brinjal (Eggplant)|Eggplant|🍆
+Okra (Lady Finger)|Okra|🌿
+Cucumber|Cucumber|🥒
+Bottle Gourd|Calabash|🥒
+Ridge Gourd|Luffa acutangula|🥒
+Snake Gourd|Trichosanthes cucumerina|🥒
+Bitter Gourd|Momordica charantia|🥒
+Sponge Gourd|Luffa aegyptiaca;Luffa|🥒
+Ash Gourd|Benincasa hispida|🥒
+Pumpkin|Pumpkin|🎃
+Zucchini|Zucchini|🥒
+Drumstick|Moringa oleifera|🌿
+Green Peas|Pea|🫛
+Cowpea|Cowpea|🫘
+Cluster Beans|Guar|🫛
+French Beans|Green bean|🫛
+Broad Beans|Vicia faba|🫛
+Yardlong Beans|Yardlong bean|🫛
+Carrot|Carrot|🥕
+Beetroot|Beetroot|🟣
+Radish|Radish|🌱
+Turnip|Turnip|🌱
+Cabbage|Cabbage|🥬
+Cauliflower|Cauliflower|🥦
+Broccoli|Broccoli|🥦
+Knol Khol (Kohlrabi)|Kohlrabi|🥬
+Sweet Corn|Sweet corn|🌽
+Baby Corn|Baby corn|🌽
+Mushroom|Agaricus bisporus|🍄
+Raw Banana|Cooking banana|🍌
+Raw Papaya||🥭
+Tindora (Ivy Gourd)|Coccinia grandis|🥒
+Chayote (Chow Chow)|Chayote|🥒
+Lotus Stem||🪷
+Taro Root (Arbi)|Taro|🌱
+Yam|Yam (vegetable)|🍠
+Shallots|Shallot|🧅
+Spring Onion|Scallion|🧅
+Leek|Leek|🧅
+Celery|Celery|🥬
+Fennel|Fennel|🌿
+Parsley|Parsley|🌿
+Green Garlic||🧄
+Fresh Turmeric|Turmeric|🫚
+Jalapeño|Jalapeño|🌶️
+Cherry Tomato|Cherry tomato|🍅
+Brussels Sprouts|Brussels sprout|🥬
+Artichoke|Globe artichoke|🌿
+Asparagus|Asparagus|🌿
+Bok Choy|Bok choy|🥬
+Microgreens|Microgreen|🌱`,
+fruits:`Apple|Apple|🍎
+Banana|Banana|🍌
+Mango|Mango|🥭
+Orange|Orange (fruit)|🍊
+Sweet Lime (Mosambi)|Citrus limetta|🍋
+Lime|Lime (fruit)|🍋
+Lemon|Lemon|🍋
+Grapes|Grape|🍇
+Guava|Guava|🍐
+Papaya|Papaya|🍈
+Pomegranate|Pomegranate|🍎
+Watermelon|Watermelon|🍉
+Muskmelon|Muskmelon|🍈
+Pineapple|Pineapple|🍍
+Sapota (Chikoo)|Sapodilla|🥔
+Custard Apple|Custard apple;Annona reticulata|🍏
+Jackfruit|Jackfruit|🍈
+Coconut|Coconut|🥥
+Tender Coconut|Coconut water|🥥
+Avocado|Avocado|🥑
+Pear|Pear|🍐
+Peach|Peach|🍑
+Plum|Plum|🍑
+Apricot|Apricot|🍑
+Kiwi|Kiwifruit|🥝
+Strawberry|Strawberry|🍓
+Blueberry|Blueberry|🫐
+Raspberry|Raspberry|🍓
+Blackberry|Blackberry|🫐
+Cherry|Cherry|🍒
+Dragon Fruit|Pitaya|🐉
+Passion Fruit|Passion fruit|🍈
+Fig|Common fig|🍈
+Dates|Date palm|🌴
+Amla (Indian Gooseberry)|Phyllanthus emblica|🍏
+Jamun|Syzygium cumini|🫐
+Litchi|Lychee|🍒
+Rambutan|Rambutan|🍒
+Longan|Longan|🍈
+Persimmon|Persimmon|🍊
+Star Fruit (Carambola)|Carambola|⭐
+Mangosteen|Mangosteen|🍇
+Durian|Durian|🍈
+Pomelo|Pomelo|🍊
+Kinnow|Kinnow;Mandarin orange|🍊
+Mandarins|Mandarin orange|🍊
+Tangerine|Tangerine|🍊
+Bael|Aegle marmelos|🍈
+Wood Apple|Limonia acidissima|🍈
+Karonda|Carissa carandas|🍒
+Indian Jujube (Ber)|Ziziphus mauritiana|🍏
+Tamarind|Tamarind|🫘
+Raw Mango||🥭
+Cantaloupe|Cantaloupe|🍈
+Cranberry|Cranberry|🍒
+Mulberry|Mulberry|🫐
+Gooseberry|Gooseberry|🍏
+Sweet Tamarind (Manila Tamarind)|Pithecellobium dulce|🫘
+Breadfruit|Breadfruit|🍈
+Soursop|Soursop|🍈
+Prickly Pear (Opuntia)|Opuntia ficus-indica|🌵
+Loquat|Loquat|🍑
+Nashi Pear|Pyrus pyrifolia|🍐`,
+greens:`Spinach|Spinach|🥬
+Amaranth Leaves (Thotakura)|Amaranthus tricolor|🥬
+Fenugreek Leaves (Methi)|Fenugreek|🌿
+Coriander Leaves|Coriander|🌿
+Mint Leaves|Spearmint;Mentha|🌿
+Curry Leaves|Curry tree|🌿
+Gongura (Sorrel)|Hibiscus sabdariffa|🌿
+Dill Leaves|Dill|🌿
+Bathua|Chenopodium album|🌿
+Mustard Greens|Mustard greens|🥬
+Malabar Spinach|Basella alba|🥬
+Purslane|Portulaca oleracea|🌿
+Lettuce|Lettuce|🥬
+Kale|Kale|🥬
+Swiss Chard|Chard|🥬
+Spring Onion Greens|Scallion|🧅
+Drumstick Leaves|Moringa oleifera|🌿
+Agathi Leaves|Sesbania grandiflora|🌿
+Radish Leaves||🥬
+Beet Greens||🥬
+Turnip Greens||🥬
+Colocasia Leaves||🌿
+Pumpkin Leaves||🌿
+Sweet Potato Leaves||🌿
+Tender Tamarind Leaves||🌿
+Chukkakura|Rumex vesicarius|🥬
+Ponnaganti Kura|Alternanthera sessilis|🥬
+Kuppa Kura|Acalypha indica|🌿
+Chakramuni|Sauropus androgynus|🥬`
+};
+const products=Object.entries(catalogData).flatMap(([type,block])=>block.split('\n').map(line=>{
+  const [name,titles,emoji]=line.split('|');
+  return {name:name.trim(),type,emoji:(emoji||'🌱').trim(),titles:(titles||'').split(';').map(t=>t.trim()).filter(Boolean),
+    origin:'Community catalogue • availability not confirmed',price:'Request price',img:undefined};
+}));
+
+// ---------- Photo lookup (Wikipedia lead image per product, batched) ----------
+const WIKI_API='https://en.wikipedia.org/w/api.php';
+async function fetchThumbs(titles){
+  const out={};
+  const chunks=[];for(let i=0;i<titles.length;i+=40)chunks.push(titles.slice(i,i+40));
+  await Promise.all(chunks.map(async chunk=>{
+    try{
+      const url=`${WIKI_API}?action=query&prop=pageimages&piprop=thumbnail&pithumbsize=640&redirects=1&format=json&origin=*&titles=${encodeURIComponent(chunk.join('|'))}`;
+      const res=await fetch(url); if(!res.ok) throw new Error('lookup failed');
+      const q=(await res.json()).query||{};
+      const norm={},redir={},byTitle={};
+      (q.normalized||[]).forEach(n=>norm[n.from]=n.to);
+      (q.redirects||[]).forEach(r=>redir[r.from]=r.to);
+      Object.values(q.pages||{}).forEach(p=>{byTitle[p.title]=p});
+      chunk.forEach(t=>{
+        let x=norm[t]||t; x=redir[x]||x;
+        const src=byTitle[x]&&byTitle[x].thumbnail&&byTitle[x].thumbnail.source;
+        out[t]=(src&&!/\.svg/i.test(src))?src:'';
+      });
+    }catch(err){chunk.forEach(t=>{out[t]=null});}  // null = lookup failed, retry later
+  }));
+  return out;
+}
+async function loadImages(list){
+  const todo=list.filter(p=>p.img===undefined);
+  todo.filter(p=>!p.titles.length).forEach(p=>{p.img=''});
+  let pending=todo.filter(p=>p.titles.length);
+  for(let round=0;pending.length&&round<3;round++){
+    const titles=[...new Set(pending.map(p=>p.titles[round]).filter(Boolean))];
+    const found=await fetchThumbs(titles);
+    const next=[];
+    pending.forEach(p=>{
+      const t=p.titles[round],u=t?found[t]:'';
+      if(u===null) return;                 // network problem: leave undefined so it retries next time
+      if(u){p.img=u;return}
+      if(p.titles[round+1]) next.push(p); else p.img='';
+    });
+    pending=next;
+  }
+}
+
+// ---------- Real photo source ----------
+// 1) IMAGE_OVERRIDES: put your own photo link for any product, e.g. 'Tomato':'https://yoursite.com/tomato.jpg'
+// 2) PEXELS_KEY: paste a free key from https://www.pexels.com/api/ to get professional stock photos for every product.
+// 3) Without a key, the Wikipedia photo (or an emoji tile) is used.
+const PEXELS_KEY='';
+const IMAGE_OVERRIDES={};
+const imgStore=(()=>{try{return JSON.parse(localStorage.getItem('fcImgs')||'{}')}catch(e){return {}}})();
+function saveImgStore(){try{localStorage.setItem('fcImgs',JSON.stringify(imgStore))}catch(e){}}
+const stem=w=>w.replace(/(es|s)$/,'');
+async function pexelsImage(p){
+  const q=p.name.replace(/[()]/g,' ')+(p.type==='greens'?' leaves':p.type==='fruits'?' fruit':'');
+  const res=await fetch(`https://api.pexels.com/v1/search?query=${encodeURIComponent(q)}&per_page=10&orientation=landscape`,{headers:{Authorization:PEXELS_KEY}});
+  if(!res.ok) throw new Error('Pexels unavailable');
+  const data=await res.json();
+  const skip=['leaves','leaf','fruit','green','sweet','indian','fresh','root','raw'];
+  const tokens=[...new Set((p.name+' '+p.titles.join(' ')).toLowerCase().replace(/[^a-z\s]/g,' ').split(/\s+/).filter(w=>w.length>3&&!skip.includes(w)).map(stem))].filter(t=>t.length>=3);
+  // only accept a photo whose description mentions this product, so name and picture always agree
+  const hit=(data.photos||[]).find(ph=>{const a=(ph.alt||'').toLowerCase();return tokens.some(t=>a.includes(t))});
+  return hit?hit.src.large:'';
+}
+async function resolveImage(p){
+  if(p.img!==undefined) return;
+  if(IMAGE_OVERRIDES[p.name]){p.img=IMAGE_OVERRIDES[p.name];return}
+  if(imgStore[p.name]){p.img=imgStore[p.name];return}
+  if(PEXELS_KEY){
+    try{const u=await pexelsImage(p);if(u){p.img=u;imgStore[p.name]=u;saveImgStore();return}}catch(e){}
+  }
+  await loadImages([p]);
+}
+
+// ---------- Rendering ----------
+let activeFilter='all';let searchTerm='';
+function visibleProducts(){return products.filter(p=>(activeFilter==='all'||p.type===activeFilter)&&(p.name.toLowerCase().includes(searchTerm)||displayName(p).toLowerCase().includes(searchTerm)))}
+function renderProducts(){
+ const grid=document.getElementById('productGrid');
+ const filtered=visibleProducts();
+ document.getElementById('catalogCount').textContent=countText(filtered.length,products.length);
+ if(!filtered.length){grid.innerHTML='<div class="empty-catalog">No produce found. Try a different search.</div>';return}
+ grid.innerHTML=filtered.map(p=>{
+  const has=!!p.img;
+  const media=`<img loading="lazy" alt="Photo of ${p.name}" ${has?`src="${p.img}"`:''} onerror="this.parentElement.classList.remove('has-image');this.parentElement.classList.add('image-failed')">`;
+  const note=p.img===''?'<small class="noimg-note">Photo coming soon</small>':'';
+  return `<article class="product" data-product-name="${p.name}"><div class="product-image${has?' has-image':''}">${media}<div class="product-fallback" aria-hidden="true"><span>${p.emoji}</span>${note}</div><span class="product-tag">${p.name}</span></div><div class="product-body"><div class="product-title-row"><h3>${p.name}</h3><span class="grade">Enquiry</span></div><div class="product-meta">${p.origin}</div><div class="product-foot"><div class="price">${p.price}<small> / enquiry</small></div><button class="btn btn-dark" type="button" data-request="${p.name}">Request supply</button></div></div></article>`;
+ }).join('');
+ grid.querySelectorAll('[data-request]').forEach(btn=>btn.addEventListener('click',()=>openModal('buyer',btn.dataset.request)));
+ if(currentLang!=='en')translateTree(grid);
+ if(cardObserver)cardObserver.disconnect();
+ const cards=[...grid.querySelectorAll('.product')];
+ const byEl=new Map();cards.forEach((el,i)=>byEl.set(el,filtered[i]));
+ const needs=cards.filter(el=>byEl.get(el).img===undefined);
+ const run=el=>{const p=byEl.get(el);resolveImage(p).then(()=>paintCard(p,el))};
+ if('IntersectionObserver' in window){
+  cardObserver=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){cardObserver.unobserve(e.target);run(e.target)}}),{rootMargin:'300px'});
+  needs.forEach(el=>cardObserver.observe(el));
+ }else needs.forEach(run);
+}
+let cardObserver=null;
+function paintCard(p,el){
+ const box=el.querySelector('.product-image');if(!box)return;
+ const img=box.querySelector('img');
+ if(p.img){box.classList.remove('image-failed');img.addEventListener('load',()=>box.classList.add('has-image'),{once:true});img.src=p.img}
+ else if(p.img===''){box.querySelector('.product-fallback').insertAdjacentHTML('beforeend','<small class="noimg-note">Photo coming soon</small>')}
+}
+document.querySelectorAll('.filter').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(b=>b.classList.remove('active'));btn.classList.add('active');activeFilter=btn.dataset.filter;renderProducts()}));
+document.getElementById('produceSearch').addEventListener('input',e=>{searchTerm=e.target.value.trim().toLowerCase();renderProducts()});
+
+
+// ---------- Firebase-backed registration/admin UI ----------
+let adminFilter='all';
+function roleLabel(role){return ({farmer:'Farmer',buyer:'Buyer',partner:'Distribution Partner',center:'Collection Partner'})[role]||role}
+function escHtml(v){return String(v||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function openAdmin(){document.getElementById('adminBackdrop').classList.add('show');document.getElementById('adminBackdrop').setAttribute('aria-hidden','false');document.getElementById('adminLogin').style.display='block';document.getElementById('adminDashboard').style.display='none';document.getElementById('adminPass').value='';document.getElementById('adminEmail').value='';document.body.style.overflow='hidden'}
+function closeAdmin(){document.getElementById('adminBackdrop').classList.remove('show');document.getElementById('adminBackdrop').setAttribute('aria-hidden','true');document.body.style.overflow='';if(window.fcAdminSignOut)window.fcAdminSignOut()}
+document.getElementById('adminLoginForm').addEventListener('submit',async e=>{e.preventDefault();const email=document.getElementById('adminEmail').value.trim(),password=document.getElementById('adminPass').value;try{await window.fcAdminLogin(email,password);document.getElementById('adminLogin').style.display='none';document.getElementById('adminDashboard').style.display='block';await renderAdmin()}catch(err){toast(err.message||'Admin sign in failed')}});
+document.getElementById('adminFilters').addEventListener('click',e=>{const b=e.target.closest('[data-admin-filter]');if(!b)return;adminFilter=b.dataset.adminFilter;document.querySelectorAll('.admin-filter').forEach(x=>x.classList.toggle('active',x===b));renderAdmin()});
+async function renderAdmin(){const root=document.getElementById('adminRecords');root.innerHTML='<div class="admin-empty">Loading registrations…</div>';try{const all=await window.fcLoadRegistrations();const pending=all.filter(r=>r.status==='pending').length,approved=all.filter(r=>r.status==='approved').length,farmers=all.filter(r=>r.role==='farmer').length;document.getElementById('adminStats').innerHTML=`<div class="admin-stat"><strong>${all.length}</strong><span>Total registrations</span></div><div class="admin-stat"><strong>${pending}</strong><span>Pending review</span></div><div class="admin-stat"><strong>${approved}</strong><span>Approved</span></div><div class="admin-stat"><strong>${farmers}</strong><span>Farmer applications</span></div>`;const list=all.filter(r=>adminFilter==='all'||r.role===adminFilter);if(!list.length){root.innerHTML='<div class="admin-empty">No registrations in this category yet.</div>';return}root.innerHTML=list.map(r=>{const d=r.details||{},name=d['Full name']||d['Full name / organization']||d['Business / buyer name']||d['Contact person']||'Registration',phone=d['Phone number']||'—',crop=d['Crops grown']||d['Produce needed']||d['Crops / services']||'—',location=d['Village / town']||d['Village / district']||d['District / operating area']||d['Location']||d['District']||'—',detail=Object.entries(d).map(([k,v])=>`<p><strong>${escHtml(k)}:</strong> ${escHtml(v||'—')}</p>`).join('');return `<article class="admin-record"><div class="admin-record-head"><div><h3>${escHtml(name)} · ${escHtml(roleLabel(r.role))}</h3><p>Submitted: ${escHtml(r.createdAt?new Date(r.createdAt).toLocaleString():'—')} · Phone: ${escHtml(phone)}</p><p>Location: ${escHtml(location)} · Crops / requirements: ${escHtml(crop)}</p></div><span class="admin-badge ${r.status==='approved'?'approved':''}">${escHtml(r.status||'pending')}</span></div><details><summary style="cursor:pointer;font-size:13px;font-weight:700;margin-top:10px">View full registration</summary><div style="padding-top:6px">${detail}</div></details><div class="admin-actions">${r.role==='farmer'&&r.status!=='approved'?`<button class="approve-btn" onclick="setRegStatus('${r.id}','approved')">Approve farmer for marketplace</button>`:''}${r.status==='approved'?`<button class="reject-btn" onclick="setRegStatus('${r.id}','pending')">Revoke / return to pending</button>`:''}<button class="delete-btn" onclick="deleteReg('${r.id}')">Delete</button></div></article>`}).join('')}catch(err){root.innerHTML=`<div class="admin-empty">${escHtml(err.message||'Could not load registrations. Check admin permissions.')}</div>`}}
+async function setRegStatus(id,status){try{await window.fcSetRegistrationStatus(id,status);await renderAdmin();await renderApprovedFarmers();toast(status==='approved'?'Farmer approved and published to marketplace':'Registration status updated')}catch(err){toast(err.message||'Could not update registration')}}
+async function deleteReg(id){if(!confirm('Delete this registration permanently from FarmCircle?'))return;try{await window.fcDeleteRegistration(id);await renderAdmin();await renderApprovedFarmers();toast('Registration deleted')}catch(err){toast(err.message||'Delete failed')}}
+async function renderApprovedFarmers(){const root=document.getElementById('approvedFarmerListings');if(!root)return;try{const approved=await window.fcLoadApprovedFarmers();if(!approved.length){root.innerHTML='';return}root.innerHTML=`<h3>Farmers approved by our community</h3><p>These farmers have been reviewed and approved by the FarmCircle admin.</p>`+approved.map(r=>{const d=r.details||{};return `<article class="farmer-listing"><div><h4>👨‍🌾 ${escHtml(d['Full name']||'FarmCircle Farmer')}</h4><p>📍 ${escHtml(d['Village / town']||'')} ${d['District']?', '+escHtml(d['District']):''}</p><p>🌱 Crops: ${escHtml(d['Crops grown']||'Not listed')}</p><p>📦 Expected harvest: ${escHtml(d['Expected harvest']||'Contact for availability')}</p><p>Member status: <strong>Approved</strong></p></div><button class="btn btn-dark" type="button" data-enquire="${escHtml(d['Crops grown']||'')}">Enquire about produce ↗</button></article>`}).join('');root.querySelectorAll('[data-enquire]').forEach(b=>b.addEventListener('click',()=>openModal('buyer',b.dataset.enquire)))}catch(e){root.innerHTML=''}}
+
+// ---------- Language selection ----------
+// Telugu and Hindi are built in (instant, work offline, also inside app previews).
+// Other Indian languages use Google Website Translator, which only works on the live, published website with internet.
+// Languages the translator does not support are removed from the list automatically after it loads.
+const I18N_SRC=`Community|కమ్యూనిటీ|समुदाय
+How it works|ఇది ఎలా పనిచేస్తుంది|यह कैसे काम करता है
+Produce|ఉత్పత్తులు|उपज
+Our impact|మా ప్రభావం|हमारा प्रभाव
+Join as Farmer|రైతుగా చేరండి|किसान के रूप में जुड़ें
+Source Produce|ఉత్పత్తులు సేకరించండి|उपज खरीदें
+A farmer-powered movement|రైతుల శక్తితో నడిచే ఉద్యమం|किसानों की ताकत से चलने वाला आंदोलन
+Growing together.|కలిసి ఎదుగుతున్నాం.|साथ मिलकर आगे बढ़ते हैं।
+A better future.|మెరుగైన భవిష్యత్తు.|एक बेहतर भविष्य।
+Connecting farmers directly to markets, businesses, and people—creating stronger opportunities, fairer value, and less waste for every harvest.|రైతులను నేరుగా మార్కెట్లు, వ్యాపారాలు మరియు ప్రజలతో అనుసంధానిస్తూ—ప్రతి పంటకు మెరుగైన అవకాశాలు, న్యాయమైన ధర మరియు తక్కువ వృథాను సృష్టిస్తున్నాం.|किसानों को सीधे बाज़ारों, व्यवसायों और लोगों से जोड़ते हुए—हर फसल के लिए बेहतर अवसर, उचित मूल्य और कम बर्बादी।
+Join Our Farmer Community ↗|మా రైతు సంఘంలో చేరండి ↗|हमारे किसान समुदाय से जुड़ें ↗
+Explore Our Network|మా నెట్‌వర్క్‌ను చూడండి|हमारा नेटवर्क देखें
+Built on community. Powered by farmers.|సమాజంపై నిర్మితం. రైతులతో శక్తివంతం.|समुदाय पर आधारित। किसानों से संचालित।
+Our purpose|మా లక్ష్యం|हमारा उद्देश्य
+Farmers first|రైతులకే ప్రాధాన్యం|किसान सबसे पहले
+A stronger network|బలమైన నెట్‌వర్క్|एक मज़बूत नेटवर्क
+Together, we grow ↗|కలిసి ఎదుగుదాం ↗|साथ मिलकर बढ़ें ↗
+Our foundation|మా పునాది|हमारी नींव
+An entire ecosystem.|ఒక సంపూర్ణ వ్యవస్థ.|एक पूरा पारिस्थितिक तंत्र।
+Built around the farmer.|రైతు చుట్టూ నిర్మితమైనది.|किसान को केंद्र में रखकर बना।
+When farmers come together, they can unlock better market access, stronger bargaining power, shared infrastructure, and new possibilities.|రైతులు కలిసికట్టుగా ఉన్నప్పుడు, వారు మెరుగైన మార్కెట్ అవకాశాలు, బలమైన బేరసారాల శక్తి, ఉమ్మడి మౌలిక సదుపాయాలు మరియు కొత్త అవకాశాలను పొందగలరు.|जब किसान एक साथ आते हैं, तो वे बेहतर बाज़ार पहुँच, मज़बूत मोलभाव की शक्ति, साझा बुनियादी ढाँचा और नई संभावनाएँ पा सकते हैं।
+Fair Market Access|న్యాయమైన మార్కెట్ అందుబాటు|उचित बाज़ार पहुँच
+Connect farmers with more buyers and opportunities, not just one route to market.|రైతులను ఒకే మార్కెట్ మార్గానికి పరిమితం చేయకుండా, మరింత మంది కొనుగోలుదారులు మరియు అవకాశాలతో అనుసంధానించండి.|किसानों को सिर्फ़ एक बाज़ार रास्ते से नहीं, बल्कि ज़्यादा खरीदारों और अवसरों से जोड़ें।
+Collective Strength|సమష్టి బలం|सामूहिक शक्ति
+Aggregate produce and demand to create a network that works better together.|ఉత్పత్తిని మరియు డిమాండ్‌ను కలిపి, కలిసి మెరుగ్గా పనిచేసే నెట్‌వర్క్‌ను సృష్టించండి.|उपज और मांग को एकत्र करके ऐसा नेटवर्क बनाएं जो साथ मिलकर बेहतर काम करे।
+Quality & Trust|నాణ్యత & నమ్మకం|गुणवत्ता और भरोसा
+Transparent weighing, grading, sourcing, and communication at every step.|ప్రతి దశలో పారదర్శక తూకం, గ్రేడింగ్, సేకరణ మరియు సంభాషణ.|हर कदम पर पारदर्शी तौल, ग्रेडिंग, सोर्सिंग और संवाद।
+Sustainable Growth|స్థిరమైన అభివృద్ధి|टिकाऊ विकास
+Reduce avoidable waste and build lasting value for farming communities.|అనవసర వృథాను తగ్గించి, రైతు సమాజాలకు శాశ్వత విలువను నిర్మించండి.|टाली जा सकने वाली बर्बादी घटाएं और किसान समुदायों के लिए स्थायी मूल्य बनाएं।
+From farm to market|పొలం నుండి మార్కెట్‌కు|खेत से बाज़ार तक
+One connected journey.|ఒక అనుసంధానిత ప్రయాణం.|एक जुड़ी हुई यात्रा।
+More value at every step.|ప్రతి దశలో మరింత విలువ.|हर कदम पर ज़्यादा मूल्य।
+Bringing the pieces together—from harvest and aggregation to buyers and the people who enjoy fresh produce.|పంట, సమీకరణ నుండి కొనుగోలుదారులు మరియు తాజా ఉత్పత్తులను ఆస్వాదించే ప్రజల వరకు—అన్ని భాగాలను కలుపుతున్నాం.|फसल और एकत्रीकरण से लेकर खरीदारों और ताज़ा उपज का आनंद लेने वाले लोगों तक—सभी कड़ियों को जोड़ना।
+01 / GROW|01 / పండించు|01 / उगाएं
+Farmers|రైతులు|किसान
+Grow, register crops and share expected harvest details.|పంటలు పండించండి, నమోదు చేయండి మరియు అంచనా దిగుబడి వివరాలు పంచుకోండి.|फसल उगाएं, पंजीकृत करें और अपेक्षित उपज का विवरण साझा करें।
+02 / COLLECT|02 / సేకరించు|02 / एकत्र करें
+Local Collection|స్థానిక సేకరణ|स्थानीय संग्रह
+Bring produce together through community collection points.|సామూహిక సేకరణ కేంద్రాల ద్వారా ఉత్పత్తులను ఒకచోట చేర్చండి.|सामुदायिक संग्रह केंद्रों के ज़रिए उपज को एक जगह लाएं।
+03 / PREPARE|03 / సిద్ధం చేయి|03 / तैयार करें
+Grade & Pack|గ్రేడింగ్ & ప్యాకింగ్|ग्रेडिंग और पैकिंग
+Sort, grade, weigh and prepare produce for different buyers.|వివిధ కొనుగోలుదారుల కోసం ఉత్పత్తులను వేరు చేసి, గ్రేడ్ చేసి, తూకం వేసి సిద్ధం చేయండి.|अलग-अलग खरीदारों के लिए उपज को छांटें, ग्रेड करें, तौलें और तैयार करें।
+04 / CONNECT|04 / అనుసంధానం|04 / जोड़ें
+Distribution|పంపిణీ|वितरण
+Coordinate reliable movement to local and larger markets.|స్థానిక మరియు పెద్ద మార్కెట్లకు నమ్మకమైన రవాణాను సమన్వయం చేయండి.|स्थानीय और बड़े बाज़ारों तक भरोसेमंद ढुलाई का समन्वय करें।
+05 / REACH|05 / చేరువ|05 / पहुँचें
+Buyers|కొనుగోలుదారులు|खरीदार
+Supply retailers, businesses, institutions and households.|రిటైలర్లు, వ్యాపారాలు, సంస్థలు మరియు కుటుంబాలకు సరఫరా చేయండి.|खुदरा विक्रेताओं, व्यवसायों, संस्थानों और परिवारों को आपूर्ति करें।
+🌾 Your harvest deserves a bigger market|🌾 మీ పంటకు పెద్ద మార్కెట్ దక్కాలి|🌾 आपकी फसल को बड़ा बाज़ार मिलना चाहिए
+For our farmers|మా రైతుల కోసం|हमारे किसानों के लिए
+Grow your harvest.|మీ పంటను పెంచుకోండి.|अपनी फसल बढ़ाएं।
+Grow your opportunities.|మీ అవకాశాలను పెంచుకోండి.|अपने अवसर बढ़ाएं।
+FarmCircle is designed to help farmers become part of a wider network—where market connections, collective participation, and transparent information can make every harvest count.|FarmCircle రైతులు విస్తృత నెట్‌వర్క్‌లో భాగమయ్యేలా రూపొందించబడింది—ఇక్కడ మార్కెట్ సంబంధాలు, సమష్టి భాగస్వామ్యం మరియు పారదర్శక సమాచారం ప్రతి పంటకు విలువ తెస్తాయి.|FarmCircle को इस तरह बनाया गया है कि किसान एक बड़े नेटवर्क का हिस्सा बन सकें—जहाँ बाज़ार से जुड़ाव, सामूहिक भागीदारी और पारदर्शी जानकारी हर फसल को मूल्यवान बनाती है।
+Register your crops and expected harvest|మీ పంటలు మరియు అంచనా దిగుబడిని నమోదు చేయండి|अपनी फसल और अपेक्षित उपज पंजीकृत करें
+Connect with potential buyers|సంభావ్య కొనుగోలుదారులతో అనుసంధానం అవ్వండి|संभावित खरीदारों से जुड़ें
+Discover collection and aggregation opportunities|సేకరణ మరియు సమీకరణ అవకాశాలను తెలుసుకోండి|संग्रह और एकत्रीकरण के अवसर खोजें
+Participate in a farmer-first community|రైతులకే ప్రాధాన్యమిచ్చే సమాజంలో భాగస్వాములవ్వండి|किसान-प्रथम समुदाय में भाग लें
+Become a Member ↗|సభ్యులు అవ్వండి ↗|सदस्य बनें ↗
+Explore the produce network|ఉత్పత్తుల నెట్‌వర్క్‌ను చూడండి|उपज नेटवर्क देखें
+Fresh from the fields.|పొలాల నుండి తాజాగా.|खेतों से ताज़ा।
+Ready for your business.|మీ వ్యాపారానికి సిద్ధంగా.|आपके व्यवसाय के लिए तैयार।
+Find the produce your business needs and connect with our network. Listings shown are illustrative examples, not live inventory or prices.|మీ వ్యాపారానికి కావలసిన ఉత్పత్తులను కనుగొని మా నెట్‌వర్క్‌తో అనుసంధానం అవ్వండి. చూపిన జాబితాలు ఉదాహరణలు మాత్రమే, ప్రత్యక్ష నిల్వ లేదా ధరలు కావు.|अपने व्यवसाय के लिए ज़रूरी उपज खोजें और हमारे नेटवर्क से जुड़ें। दिखाई गई सूचियाँ केवल उदाहरण हैं, वास्तविक स्टॉक या कीमतें नहीं।
+Hide produce ✕|ఉత్పత్తులను దాచండి ✕|उपज छिपाएं ✕
+All produce|అన్ని ఉత్పత్తులు|सभी उपज
+Vegetables|కూరగాయలు|सब्ज़ियाँ
+Fruits|పండ్లు|फल
+Leafy greens|ఆకుకూరలు|पत्तेदार साग
+Search fruits or vegetables…|పండ్లు లేదా కూరగాయలు వెతకండి…|फल या सब्ज़ियाँ खोजें…
+Photos courtesy of Pexels and Wikimedia contributors.|ఫోటోలు: Pexels మరియు Wikimedia సహకారుల సౌజన్యంతో.|फ़ोटो सौजन्य: Pexels और Wikimedia योगदानकर्ता।
+Our shared impact|మన ఉమ్మడి ప్రభావం|हमारा साझा प्रभाव
+Stronger farms.|బలమైన పొలాలు.|मज़बूत खेत।
+Stronger communities.|బలమైన సమాజాలు.|मज़बूत समुदाय।
+Our ambition is to build a network where every farmer has a stronger connection to opportunity, and every buyer can source with confidence.|ప్రతి రైతుకు అవకాశాలతో బలమైన సంబంధం ఉండేలా, ప్రతి కొనుగోలుదారు నమ్మకంగా సేకరించగలిగేలా నెట్‌వర్క్‌ను నిర్మించడమే మా లక్ష్యం.|हमारा लक्ष्य ऐसा नेटवर्क बनाना है जहाँ हर किसान अवसरों से मज़बूती से जुड़ा हो और हर खरीदार भरोसे के साथ खरीद सके।
+Possibilities unlocked|తెరుచుకున్న అవకాశాలు|खुली संभावनाएँ
+Connected community|అనుసంధానమైన సమాజం|जुड़ा हुआ समुदाय
+Farmers left behind — our aspiration|వెనుకబడిన రైతులు — మా ఆకాంక్ష|पीछे छूटे किसान — हमारी आकांक्षा
+Commitment to transparency|పారదర్శకతకు నిబద్ధత|पारदर्शिता के प्रति प्रतिबद्धता
+Illustrative mission metrics—not verified operating statistics.|ఇవి ఉదాహరణ లక్ష్య సూచికలు మాత్రమే—ధృవీకరించిన గణాంకాలు కావు.|ये केवल उदाहरण के लिए लक्ष्य-संकेतक हैं—सत्यापित आँकड़े नहीं।
+Beyond the marketplace|మార్కెట్‌కు మించి|बाज़ार से आगे
+When the community grows,|సమాజం ఎదిగినప్పుడు,|जब समुदाय आगे बढ़ता है,
+everyone moves forward.|అందరూ ముందుకు సాగుతారు.|तो सब आगे बढ़ते हैं।
+A shared vision|ఉమ్మడి దృష్టి|साझा दृष्टि
+From individual harvests to collective opportunity.|వ్యక్తిగత పంటల నుండి సమష్టి అవకాశాల వైపు.|व्यक्तिगत फसलों से सामूहिक अवसर तक।
+We believe the future of agriculture is built through connection, trust, and communities that stand together.|వ్యవసాయ భవిష్యత్తు అనుసంధానం, నమ్మకం మరియు కలిసికట్టుగా నిలిచే సమాజాల ద్వారా నిర్మితమవుతుందని మేము నమ్ముతాం.|हमारा विश्वास है कि खेती का भविष्य जुड़ाव, भरोसे और साथ खड़े समुदायों से बनता है।
+Less waste. More value.|తక్కువ వృథా. ఎక్కువ విలువ.|कम बर्बादी। ज़्यादा मूल्य।
+Better coordination can help produce reach the right buyer at the right time.|మెరుగైన సమన్వయం ఉత్పత్తి సరైన సమయంలో సరైన కొనుగోలుదారుకు చేరడానికి సహాయపడుతుంది.|बेहतर समन्वय से उपज सही समय पर सही खरीदार तक पहुँच सकती है।
+A network that can grow.|ఎదగగల నెట్‌వర్క్.|एक बढ़ने वाला नेटवर्क।
+Start locally. Connect villages. Expand region by region, with farmers at the center.|స్థానికంగా మొదలుపెట్టండి. గ్రామాలను కలపండి. రైతులను కేంద్రంగా ఉంచి ప్రాంతం వారీగా విస్తరించండి.|स्थानीय स्तर से शुरू करें। गाँवों को जोड़ें। किसानों को केंद्र में रखकर क्षेत्र-दर-क्षेत्र फैलें।
+Be part of the movement|ఉద్యమంలో భాగమవ్వండి|आंदोलन का हिस्सा बनें
+There's a place|ఇక్కడ మీకు|यहाँ आपके लिए
+for you here.|ఒక స్థానం ఉంది.|एक जगह है।
+Whether you grow, buy, move, or support produce—we're building this community together.|మీరు పండించినా, కొన్నా, రవాణా చేసినా లేదా ఉత్పత్తులకు తోడ్పడినా—ఈ సమాజాన్ని మనం కలిసి నిర్మిస్తున్నాం.|चाहे आप उगाएं, खरीदें, ढुलाई करें या उपज का समर्थन करें—हम यह समुदाय मिलकर बना रहे हैं।
+I'm a Farmer|నేను రైతును|मैं किसान हूँ
+Join the community|సంఘంలో చేరండి|समुदाय से जुड़ें
+I'm a Buyer|నేను కొనుగోలుదారును|मैं खरीदार हूँ
+Source fresh produce|తాజా ఉత్పత్తులు సేకరించండి|ताज़ा उपज खरीदें
+Distribution Partner|పంపిణీ భాగస్వామి|वितरण भागीदार
+Move produce|ఉత్పత్తులను రవాణా చేయండి|उपज की ढुलाई करें
+Collection Partner|సేకరణ భాగస్వామి|संग्रह भागीदार
+Build locally|స్థానికంగా నిర్మించండి|स्थानीय स्तर पर निर्माण करें
+Building a farmer-powered economic network. Together We Grow. Together We Thrive.|రైతుల శక్తితో నడిచే ఆర్థిక నెట్‌వర్క్‌ను నిర్మిస్తున్నాం. కలిసి ఎదుగుదాం. కలిసి వర్ధిల్లుదాం.|किसानों की शक्ति से चलने वाला आर्थिक नेटवर्क बना रहे हैं। साथ मिलकर बढ़ें। साथ मिलकर फलें-फूलें।
+Our Community|మా సమాజం|हमारा समुदाय
+How it Works|ఇది ఎలా పనిచేస్తుంది|यह कैसे काम करता है
+Join Us|మాతో చేరండి|हमसे जुड़ें
+Contact|సంప్రదించండి|संपर्क
+© 2026 FarmCircle. A community in the making.|© 2026 FarmCircle. రూపుదిద్దుకుంటున్న సమాజం.|© 2026 FarmCircle. निर्माणाधीन एक समुदाय।
+Farmer-first. Community-powered.|రైతులకే ప్రాధాన్యం. సమాజ శక్తితో.|किसान-प्रथम। समुदाय-संचालित।
+Join the network|నెట్‌వర్క్‌లో చేరండి|नेटवर्क से जुड़ें
+Let's grow together.|కలిసి ఎదుగుదాం.|आइए साथ मिलकर बढ़ें।
+Share a few details to help us connect you with the FarmCircle community.|FarmCircle సంఘంతో మిమ్మల్ని అనుసంధానించడానికి కొన్ని వివరాలు పంచుకోండి.|FarmCircle समुदाय से जोड़ने में हमारी मदद के लिए कुछ विवरण साझा करें।
+Submit interest ↗|ఆసక్తిని సమర్పించండి ↗|रुचि जमा करें ↗
+Thank you for joining!|చేరినందుకు ధన్యవాదాలు!|जुड़ने के लिए धन्यवाद!
+Your registration has been securely submitted to FarmCircle. Our team will review it and contact you.|ఇది వెబ్‌సైట్ ప్రివ్యూ మాత్రమే. మీ వివరాలు పంపబడలేదు లేదా నిల్వ చేయబడలేదు. నమోదులు స్వీకరించడానికి ప్రారంభానికి ముందు డేటాబేస్‌ను అనుసంధానించండి.|यह वेबसाइट का प्रीव्यू है। आपका विवरण भेजा या सहेजा नहीं गया है। पंजीकरण पाने के लिए लॉन्च से पहले डेटाबेस जोड़ें।
+Done|పూర్తయింది|हो गया
+Join as a Farmer|రైతుగా చేరండి|किसान के रूप में जुड़ें
+Become part of a farmer-first network.|రైతులకే ప్రాధాన్యమిచ్చే నెట్‌వర్క్‌లో భాగమవ్వండి.|किसान-प्रथम नेटवर్क का हिस्सा बनें।
+Tell us what your business needs.|మీ వ్యాపారానికి ఏమి కావాలో చెప్పండి.|बताइए आपके व्यवसाय को क्या चाहिए।
+Help connect farms with markets.|పొలాలను మార్కెట్లతో అనుసంధానించడంలో సహాయపడండి.|खेतों को बाज़ारों से जोड़ने में मदद करें।
+Help build local collection infrastructure.|స్థానిక సేకరణ మౌలిక సదుపాయాలు నిర్మించడంలో సహాయపడండి.|स्थानीय संग्रह ढाँचा बनाने में मदद करें।
+Farmer community|రైతు సంఘం|किसान समुदाय
+Full name|పూర్తి పేరు|पूरा नाम
+Phone number|ఫోన్ నంబర్|फ़ोन नंबर
+Village / town|గ్రామం / పట్టణం|गाँव / कस्बा
+District|జిల్లా|ज़िला
+Crops grown|పండించే పంటలు|उगाई जाने वाली फसलें
+Expected harvest|అంచనా దిగుబడి|अपेक्षित उपज
+Land area|భూమి విస్తీర్ణం|भूमि क्षेत्रफल
+Business / buyer name|వ్యాపారం / కొనుగోలుదారు పేరు|व्यवसाय / खरीदार का नाम
+Contact person|సంప్రదింపు వ్యక్తి|संपर्क व्यक्ति
+Business type|వ్యాపార రకం|व्यवसाय का प्रकार
+Location|ప్రదేశం|स्थान
+Produce needed|కావలసిన ఉత్పత్తులు|आवश्यक उपज
+Quantity required|అవసరమైన పరిమాణం|आवश्यक मात्रा
+District / operating area|జిల్లా / పనిచేసే ప్రాంతం|ज़िला / संचालन क्षेत्र
+Vehicle / capacity|వాహనం / సామర్థ్యం|वाहन / क्षमता
+Availability|లభ్యత|उपलब्धता
+Full name / organization|పూర్తి పేరు / సంస్థ|पूरा नाम / संगठन
+Village / district|గ్రామం / జిల్లా|गाँव / ज़िला
+Available facility|అందుబాటులో ఉన్న సౌకర్యం|उपलब्ध सुविधा
+Crops / services|పంటలు / సేవలు|फसलें / सेवाएँ
+Product of interest|ఆసక్తి ఉన్న ఉత్పత్తి|रुचि का उत्पाद
+Your name|మీ పేరు|आपका नाम
+10-digit mobile|10 అంకెల మొబైల్|10 अंकों का मोबाइल
+Village|గ్రామం|गाँव
+e.g. Tomato, chilli|ఉదా. టమాటా, మిరప|जैसे टमाटर, मिर्च
+Quantity / date (optional)|పరిమాణం / తేదీ (ఐచ్ఛికం)|मात्रा / तारीख (वैकल्पिक)
+Acres (optional)|ఎకరాలు (ఐచ్ఛికం)|एकड़ (वैकल्पिक)
+Business name|వ్యాపారం పేరు|व्यवसाय का नाम
+Choose type|రకాన్ని ఎంచుకోండి|प्रकार चुनें
+City / district|నగరం / జిల్లా|शहर / ज़िला
+Products|ఉత్పత్తులు|उत्पाद
+Quantity / frequency|పరిమాణం / తరచుదనం|मात्रा / आवृत्ति
+Capacity (optional)|సామర్థ్యం (ఐచ్ఛికం)|क्षमता (वैकल्पिक)
+Days / timing (optional)|రోజులు / సమయం (ఐచ్ఛికం)|दिन / समय (वैकल्पिक)
+Name|పేరు|नाम
+Space / facility details|స్థలం / సౌకర్య వివరాలు|जगह / सुविधा का विवरण
+What can you support?|మీరు ఏమి సహాయం చేయగలరు?|आप किसमें सहयोग कर सकते हैं?
+Retail shop|రిటైల్ దుకాణం|खुदरा दुकान
+Hotel / restaurant|హోటల్ / రెస్టారెంట్|होटल / रेस्तरां
+Wholesale|టోకు వ్యాపారం|थोक
+Supermarket|సూపర్ మార్కెట్|सुपरमार्केट
+Institution|సంస్థ|संस्था
+Household|గృహం|घरेलू
+Food processor|ఆహార ప్రాసెసర్|खाद्य प्रोसेसर
+Other|ఇతర|अन्य
+Enquiry|విచారణ|पूछताछ
+Community catalogue • availability not confirmed|కమ్యూనిటీ కేటలాగ్ • లభ్యత నిర్ధారించబడలేదు|सामुदायिक कैटलॉग • उपलब्धता की पुष्टि नहीं
+Request price|ధర అడగండి|कीमत पूछें
+/ enquiry|/ విచారణపై|/ पूछताछ पर
+Request supply|సరఫరా కోరండి|आपूर्ति का अनुरोध करें
+Photo coming soon|ఫోటో త్వరలో|फ़ोटो जल्द आएगी
+No produce found. Try a different search.|ఉత్పత్తులు కనబడలేదు. వేరే పదంతో వెతకండి.|कोई उपज नहीं मिली। कोई दूसरा शब्द खोजें।
+Add your official contact details before launch.|ప్రారంభానికి ముందు మీ అధికారిక సంప్రదింపు వివరాలు జోడించండి.|लॉन्च से पहले अपने आधिकारिक संपर्क विवरण जोड़ें।
+Tomato|టమాటా|टमाटर
+Onion|ఉల్లిపాయ|प्याज़
+Potato|బంగాళాదుంప|आलू
+Sweet Potato|చిలగడదుంప|शकरकंद
+Garlic|వెల్లుల్లి|लहसुन
+Ginger|అల్లం|अदरक
+Green Chilli|పచ్చి మిరపకాయ|हरी मिर्च
+Red Chilli|ఎర్ర మిరపకాయ|लाल मिर्च
+Capsicum|క్యాప్సికమ్|शिमला मिर्च
+Brinjal (Eggplant)|వంకాయ|बैंगन
+Okra (Lady Finger)|బెండకాయ|भिंडी
+Cucumber|దోసకాయ|खीरा
+Bottle Gourd|సొరకాయ|लौकी
+Ridge Gourd|బీరకాయ|तोरई
+Snake Gourd|పొట్లకాయ|चिचिंडा
+Bitter Gourd|కాకరకాయ|करेला
+Sponge Gourd|నేతి బీరకాయ|नेनुआ
+Ash Gourd|బూడిద గుమ్మడికాయ|पेठा
+Pumpkin|గుమ్మడికాయ|कद्दू
+Zucchini|జుకిని|ज़ुकीनी
+Drumstick|మునగకాయ|सहजन की फली
+Green Peas|పచ్చి బఠాణీ|हरी मटर
+Cowpea|బొబ్బర్లు|लोबिया
+Cluster Beans|గోరుచిక్కుడు|ग्वार फली
+French Beans|ఫ్రెంచ్ బీన్స్|फ्रेंच बीन्स
+Broad Beans|చిక్కుడుకాయ|सेम
+Yardlong Beans|పొడవు చిక్కుడు|लंबी लोबिया
+Carrot|క్యారెట్|गाजर
+Beetroot|బీట్‌రూట్|चुकंदर
+Radish|ముల్లంగి|मूली
+Turnip|టర్నిప్|शलगम
+Cabbage|క్యాబేజీ|पत्ता गोभी
+Cauliflower|కాలీఫ్లవర్|फूल गोभी
+Broccoli|బ్రోకలీ|ब्रोकली
+Knol Khol (Kohlrabi)|నూల్ కోల్|गांठ गोभी
+Sweet Corn|స్వీట్ కార్న్|स्वीट कॉर्न
+Baby Corn|బేబీ కార్న్|बेबी कॉर्न
+Mushroom|పుట్టగొడుగులు|मशरूम
+Raw Banana|అరటికాయ|कच्चा केला
+Raw Papaya|బొప్పాయి కాయ|कच्चा पपीता
+Tindora (Ivy Gourd)|దొండకాయ|कुंदरू
+Chayote (Chow Chow)|బెంగళూరు వంకాయ|चायोटे (चौ-चौ)
+Lotus Stem|తామర కాడ|कमल ककड़ी
+Taro Root (Arbi)|చామదుంప|अरबी
+Yam|కంద|जिमीकंद
+Shallots|చిన్న ఉల్లిపాయలు|छोटा प्याज़
+Spring Onion|ఉల్లికాడలు|हरी प्याज़
+Leek|లీక్|लीक
+Celery|సెలెరీ|सेलरी
+Fennel|సోంపు|सौंफ
+Parsley|పార్స్లీ|पार्सले
+Green Garlic|పచ్చి వెల్లుల్లి|हरा लहसुन
+Fresh Turmeric|పచ్చి పసుపు|कच्ची हल्दी
+Jalapeño|జలపెనో|हलापेनो
+Cherry Tomato|చెర్రీ టమాటా|चेरी टमाटर
+Brussels Sprouts|బ్రస్సెల్స్ స్ప్రౌట్స్|ब्रसेल्स स्प्राउट्स
+Artichoke|ఆర్టిచోక్|आर्टिचोक
+Asparagus|ఆస్పరాగస్|शतावरी
+Bok Choy|బోక్ చోయ్|बोक चोय
+Microgreens|మైక్రోగ్రీన్స్|माइक्रोग्रीन्स
+Apple|ఆపిల్|सेब
+Banana|అరటిపండు|केला
+Mango|మామిడి పండు|आम
+Orange|నారింజ|संतरा
+Sweet Lime (Mosambi)|బత్తాయి|मौसमी
+Lime|నిమ్మకాయ|नींबू
+Lemon|లెమన్|लेमन
+Grapes|ద్రాక్ష|अंगूर
+Guava|జామపండు|अमरूद
+Papaya|బొప్పాయి|पपीता
+Pomegranate|దానిమ్మ|अनार
+Watermelon|పుచ్చకాయ|तरबूज़
+Muskmelon|ఖర్బూజా|खरबूजा
+Pineapple|అనాస పండు|अनानास
+Sapota (Chikoo)|సపోటా|चीकू
+Custard Apple|సీతాఫలం|शरीफ़ा
+Jackfruit|పనస పండు|कटहल
+Coconut|కొబ్బరికాయ|नारियल
+Tender Coconut|లేత కొబ్బరి బొండాం|कच्चा नारियल (डाब)
+Avocado|అవకాడో|एवोकाडो
+Pear|పియర్|नाशपाती
+Peach|పీచ్|आड़ू
+Plum|ప్లమ్|आलूबुखारा
+Apricot|ఆప్రికాట్|खुबानी
+Kiwi|కివి|कीवी
+Strawberry|స్ట్రాబెర్రీ|स्ट्रॉबेरी
+Blueberry|బ్లూబెర్రీ|ब्लूबेरी
+Raspberry|రాస్ప్‌బెర్రీ|रास्पबेरी
+Blackberry|బ్లాక్‌బెర్రీ|ब्लैकबेरी
+Cherry|చెర్రీ|चेरी
+Dragon Fruit|డ్రాగన్ ఫ్రూట్|ड्रैगन फ्रूट
+Passion Fruit|ప్యాషన్ ఫ్రూట్|पैशन फ्रूट
+Fig|అంజూరం|अंजीर
+Dates|ఖర్జూరం|खजूर
+Amla (Indian Gooseberry)|ఉసిరికాయ|आंवला
+Jamun|నేరేడు పండు|जामुन
+Litchi|లిచీ|लीची
+Rambutan|రంబుటాన్|रामबूटन
+Longan|లాంగన్|लोंगान
+Persimmon|పెర్సిమ్మన్|पर्सिमन
+Star Fruit (Carambola)|స్టార్ ఫ్రూట్|कमरख
+Mangosteen|మాంగోస్టీన్|मैंगोस्टीन
+Durian|దురియన్|ड्यूरियन
+Pomelo|పొమెలో|चकोतरा
+Kinnow|కిన్నో|किन्नू
+Mandarins|మాండరిన్|मंदारिन
+Tangerine|టాంజరిన్|टेंजेरीन
+Bael|మారేడు|बेल
+Wood Apple|వెలగపండు|कैथा
+Karonda|వాక్కాయ|करौंदा
+Indian Jujube (Ber)|రేగు పండు|बेर
+Tamarind|చింతపండు|इमली
+Raw Mango|మామిడి కాయ|कच्चा आम
+Cantaloupe|కాంటలోప్|कैंटलोप
+Cranberry|క్రాన్‌బెర్రీ|क्रैनबेरी
+Mulberry|మల్బరీ|शहतूत
+Gooseberry|గూస్‌బెర్రీ|गूसबेरी
+Sweet Tamarind (Manila Tamarind)|సీమ చింతకాయ|जंगल जलेबी
+Breadfruit|బ్రెడ్‌ఫ్రూట్|ब्रेडफ्रूट
+Soursop|సోర్సాప్|सोरसोप
+Prickly Pear (Opuntia)|నాగజెముడు పండు|नागफनी फल
+Loquat|లోక్వాట్|लोकाट
+Nashi Pear|నాషి పియర్|नाशी नाशपाती
+Spinach|పాలకూర|पालक
+Amaranth Leaves (Thotakura)|తోటకూర|चौलाई
+Fenugreek Leaves (Methi)|మెంతికూర|मेथी
+Coriander Leaves|కొత్తిమీర|धनिया पत्ती
+Mint Leaves|పుదీనా|पुदीना
+Curry Leaves|కరివేపాకు|कढ़ी पत्ता
+Gongura (Sorrel)|గోంగూర|गोंगुरा (अंबाड़ी)
+Dill Leaves|సోయా కూర|सोया (सुवा)
+Bathua|బథువా|बथुआ
+Mustard Greens|ఆవాల ఆకుకూర|सरसों का साग
+Malabar Spinach|బచ్చలికూర|पोई साग
+Purslane|గంగబాయిల కూర|कुलफा (लोनिया)
+Lettuce|లెట్యూస్|सलाद पत्ता
+Kale|కేల్|केल
+Swiss Chard|స్విస్ చార్డ్|स्विस चार्ड
+Spring Onion Greens|ఉల్లికాడ ఆకులు|हरे प्याज़ के पत्ते
+Drumstick Leaves|మునగాకు|सहजन के पत्ते
+Agathi Leaves|అవిసె ఆకులు|अगस्ती के पत्ते
+Radish Leaves|ముల్లంగి ఆకులు|मूली के पत्ते
+Beet Greens|బీట్‌రూట్ ఆకులు|चुकंदर के पत्ते
+Turnip Greens|టర్నిప్ ఆకులు|शलगम के पत्ते
+Colocasia Leaves|చామదుంప ఆకులు|अरबी के पत्ते
+Pumpkin Leaves|గుమ్మడి ఆకులు|कद्दू के पत्ते
+Sweet Potato Leaves|చిలగడదుంప ఆకులు|शकरकंद के पत्ते
+Tender Tamarind Leaves|చింత చిగురు|कोमल इमली के पत्ते
+Chukkakura|చుక్కకూర|चुक्का साग
+Ponnaganti Kura|పొన్నగంటి కూర|पोन्नागंटी साग
+Kuppa Kura|కుప్పింటాకు|कुप्पी का साग
+Chakramuni|చక్రమునికూర|चक्रमुनि`;
+const I18N={te:{},hi:{}};
+I18N_SRC.split('\n').forEach(l=>{const [k,te,hi]=l.split('|');if(k&&te){I18N.te[k]=te.trim();I18N.hi[k]=(hi||te).trim()}});
+const LANGS=[['en','English','English'],['te','తెలుగు','Telugu'],['hi','हिन्दी','Hindi'],['bn','বাংলা','Bengali'],['mr','मराठी','Marathi'],['ta','தமிழ்','Tamil'],['ur','اردو','Urdu'],['gu','ગુજરાતી','Gujarati'],['kn','ಕನ್ನಡ','Kannada'],['ml','മലയാളം','Malayalam'],['or','ଓଡ଼ିଆ','Odia'],['pa','ਪੰਜਾਬੀ','Punjabi'],['as','অসমীয়া','Assamese'],['mai','मैथिली','Maithili'],['sa','संस्कृतम्','Sanskrit'],['ne','नेपाली','Nepali'],['sd','سنڌي','Sindhi'],['gom','कोंकणी','Konkani'],['doi','डोगरी','Dogri'],['mni-Mtei','মৈতৈলোন্','Manipuri'],['bho','भोजपुरी','Bhojpuri'],['lus','Mizo','Mizo'],['ks','कॉशुर','Kashmiri'],['brx','बड़ो','Bodo'],['sat','ᱥᱟᱱᱛᱟᱲᱤ','Santali']];
+const langSelect=document.getElementById('langSelect');
+langSelect.innerHTML=LANGS.map(l=>`<option value="${l[0]}">${l[1]}${l[0]==='en'?'':' · '+l[2]}</option>`).join('');
+let currentLang='en',googleActive=false,translatorState='idle';
+
+// built-in translation: swaps matching text and placeholders, remembers the English originals
+const textOrig=new WeakMap(),attrOrig=new WeakMap();
+function translateTextNode(n){
+  const par=n.parentElement;if(!par||par.closest('.notranslate,script,style'))return;
+  if(!textOrig.has(n))textOrig.set(n,n.nodeValue);
+  const orig=textOrig.get(n);let core=orig.trim().replace(/\s+/g,' ');if(!core)return;
+  let star='';if(/ \*$/.test(core)){star=' *';core=core.slice(0,-2)}
+  const t=I18N[currentLang]&&I18N[currentLang][core];
+  n.nodeValue=t?orig.match(/^\s*/)[0]+t+star+orig.match(/\s*$/)[0]:orig;
+}
+function translateAttrs(el){
+  ['placeholder'].forEach(a=>{
+    if(!el.hasAttribute(a))return;
+    const store=attrOrig.get(el)||{};if(store[a]===undefined)store[a]=el.getAttribute(a);attrOrig.set(el,store);
+    const t=I18N[currentLang]&&I18N[currentLang][store[a]];el.setAttribute(a,t||store[a]);
+  });
+}
+function translateTree(root){
+  if(root.nodeType===3){translateTextNode(root);return}
+  if(root.nodeType!==1)return;
+  const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT),nodes=[];while(w.nextNode())nodes.push(w.currentNode);
+  nodes.forEach(translateTextNode);
+  if(root.matches('[placeholder]'))translateAttrs(root);
+  root.querySelectorAll('[placeholder]').forEach(translateAttrs);
+}
+new MutationObserver(ms=>{if(currentLang==='en')return;ms.forEach(m=>m.addedNodes.forEach(translateTree))}).observe(document.body,{childList:true,subtree:true});
+function countText(n,m){
+  if(currentLang==='te')return `${m} కేటలాగ్ అంశాలలో ${n} చూపబడుతున్నాయి · జాబితాలు మరియు లభ్యత ప్రత్యక్షంగా లేవు.`;
+  if(currentLang==='hi')return `${m} में से ${n} कैटलॉग आइटम दिखाए जा रहे हैं · सूची और उपलब्धता लाइव नहीं हैं।`;
+  return `Showing ${n} of ${m} catalogue items · Listings and availability are not live.`;
+}
+function displayName(p){return (I18N[currentLang]&&I18N[currentLang][p.name])||p.name}
+
+// Google Website Translator (all other languages, live site only)
+function googleTranslateElementInit(){
+  new google.translate.TranslateElement({pageLanguage:'en',autoDisplay:false,includedLanguages:LANGS.map(l=>l[0]).join(',')},'google_translate_element');
+  translatorState='ready';
+}
+const NEEDS_LIVE='This language needs the live website with internet. Telugu and Hindi work everywhere.';
+function loadTranslator(){
+  if(translatorState!=='idle')return;
+  translatorState='loading';
+  const sc=document.createElement('script');
+  sc.src='https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+  sc.onerror=()=>{translatorState='idle';langSelect.value=currentLang;toast(NEEDS_LIVE)};
+  document.head.appendChild(sc);
+}
+function whenCombo(cb,tries=0){
+  const c=document.querySelector('.goog-te-combo');
+  if(c&&c.options.length>1)return cb(c);
+  if(tries>40){langSelect.value=currentLang;toast(NEEDS_LIVE);return}
+  setTimeout(()=>whenCombo(cb,tries+1),250);
+}
+function clearTranslateCookie(){
+  const past='expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/';
+  document.cookie='googtrans=;'+past;document.cookie='googtrans=;'+past+';domain='+location.hostname;
+}
+function setLanguage(code,save=true){
+  const builtin=code==='en'||!!I18N[code];
+  if(builtin){
+    if(save){try{localStorage.setItem('fcLang',code)}catch(e){}}
+    document.documentElement.lang=code;
+    if(googleActive){clearTranslateCookie();location.reload();return}   // restore the original English first
+    currentLang=code;translateTree(document.body);
+    if(marketEl.classList.contains('open'))renderProducts();
+    return;
+  }
+  // Other languages: show English first, then hand over to Google Translate
+  currentLang='en';translateTree(document.body);
+  loadTranslator();
+  whenCombo(c=>{
+    const have=new Set([...c.options].map(o=>o.value));
+    [...langSelect.options].forEach(o=>{if(o.value!=='en'&&o.value!==code&&!I18N[o.value]&&!have.has(o.value))o.remove()});
+    if(!have.has(code)){langSelect.value='en';toast('This language is not supported by the translator yet.');return}
+    if(save){try{localStorage.setItem('fcLang',code)}catch(e){}}
+    document.documentElement.lang=code.split('-')[0];
+    googleActive=true;c.value=code;c.dispatchEvent(new Event('change',{bubbles:true}));
+  });
+}
+langSelect.addEventListener('change',()=>setLanguage(langSelect.value));
+
+// ---------- Produce section: hidden until "Produce" is clicked in the menu ----------
+const marketEl=document.getElementById('market');
+const produceLink=document.getElementById('produceLink');
+function openProduce(){
+  const wasClosed=!marketEl.classList.contains('open');
+  marketEl.classList.add('open');marketEl.setAttribute('aria-hidden','false');produceLink.classList.add('active');
+  marketEl.querySelectorAll('.reveal').forEach(el=>el.classList.add('visible'));
+  if(wasClosed){renderProducts();if(window.fcLoadApprovedFarmers)renderApprovedFarmers()}
+  requestAnimationFrame(()=>marketEl.scrollIntoView({behavior:'smooth',block:'start'}));
+}
+function closeProduce(){
+  marketEl.classList.remove('open');marketEl.setAttribute('aria-hidden','true');produceLink.classList.remove('active');
+  document.getElementById('productGrid').innerHTML='';
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+produceLink.addEventListener('click',e=>{e.preventDefault();openProduce()});
+document.getElementById('closeProduce').addEventListener('click',closeProduce);
+const fields={farmer:[['Full name','text','Your name',1],['Phone number','tel','10-digit mobile',1],['Village / town','text','Village',1],['District','text','District',1],['Crops grown','text','e.g. Tomato, chilli',1],['Expected harvest','text','Quantity / date (optional)',0],['Land area','text','Acres (optional)',0]],buyer:[['Business / buyer name','text','Business name',1],['Contact person','text','Your name',1],['Phone number','tel','10-digit mobile',1],['Business type','select','Choose type',1,['Retail shop','Hotel / restaurant','Wholesale','Supermarket','Institution','Household','Food processor','Other']],['Location','text','City / district',1],['Produce needed','text','Products',1],['Quantity required','text','Quantity / frequency',0]],partner:[['Full name','text','Your name',1],['Phone number','tel','10-digit mobile',1],['District / operating area','text','Location',1],['Vehicle / capacity','text','Capacity (optional)',0],['Availability','text','Days / timing (optional)',0]],center:[['Full name / organization','text','Name',1],['Phone number','tel','10-digit mobile',1],['Village / district','text','Location',1],['Available facility','text','Space / facility details',0],['Crops / services','text','What can you support?',0]]};
+const titles={farmer:['Join as a Farmer','Become part of a farmer-first network.'],buyer:['Source Produce','Tell us what your business needs.'],partner:['Distribution Partner','Help connect farms with markets.'],center:['Collection Partner','Help build local collection infrastructure.']};let currentRole='farmer';function openModal(role='farmer',product=''){if(!titles[role])role='farmer';currentRole=role;document.getElementById('formArea').style.display='block';document.getElementById('successArea').classList.remove('show');document.getElementById('modalEyebrow').textContent=role==='farmer'?'Farmer community':'Join the network';document.getElementById('modalTitle').textContent=titles[role][0];document.getElementById('modalDesc').textContent=titles[role][1];let html=fields[role].map((f,i)=>`<div class="field ${f[3]?'':'full'}"><label>${f[0]}${f[3]?' *':''}</label>${f[1]==='select'?`<select name="${f[0]}" ${f[3]?'required':''}><option value="">${f[2]}</option>${f[4].map(v=>`<option>${v}</option>`).join('')}</select>`:`<input name="${f[0]}" type="${f[1]}" placeholder="${f[2]}" ${f[3]?'required':''} ${f[1]==='tel'?'pattern="[0-9]{10}"':''}>`}</div>`).join('');if(product&&role==='buyer')html+=`<div class="field full"><label>Product of interest</label><input name="Product of interest" value="${escHtml(product)}" readonly></div>`;document.getElementById('formFields').innerHTML=html;document.getElementById('modalBackdrop').classList.add('show');document.body.style.overflow='hidden'}function closeModal(){document.getElementById('modalBackdrop').classList.remove('show');document.body.style.overflow=''}function backdropClose(e){if(e.target.id==='modalBackdrop')closeModal()}document.getElementById('joinForm').addEventListener('submit',async e=>{e.preventDefault();if(!e.target.reportValidity())return;const fd=new FormData(e.target),details={};fd.forEach((v,k)=>details[k]=String(v).trim());if(details._hp)return;delete details._hp;const sbtn=e.target.querySelector('.form-submit');if(sbtn.disabled)return;sbtn.disabled=true;const record={role:currentRole,details};try{await window.fcRegister(record);document.getElementById('formArea').style.display='none';document.getElementById('successArea').classList.add('show');e.target.reset()}catch(err){toast(err.message||'Could not submit registration. Please try again.')}finally{sbtn.disabled=false}});document.getElementById('menuBtn').addEventListener('click',()=>document.getElementById('navLinks').classList.toggle('open'));document.querySelectorAll('#navLinks a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navLinks').classList.remove('open')));let toastTimer;function toast(s){const t=document.getElementById('toast');t.textContent=s;t.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.classList.remove('show'),2800)}const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+// ---------- Main photos: Wikimedia Commons, with backups ----------
+// Each photo tries its candidates in order; if all fail, a green gradient is shown instead of a broken image.
+// To use your own photo, replace the data-commons list on the <img> with: data-src="https://your-link/photo.jpg"
+document.querySelectorAll('img[data-commons],img[data-src]').forEach(img=>{
+  const own=img.dataset.src?[img.dataset.src]:[];
+  const list=own.concat((img.dataset.commons||'').split('|').filter(Boolean).map(f=>'https://commons.wikimedia.org/wiki/Special:FilePath/'+encodeURIComponent(f.replace(/ /g,'_'))+'?width=1400'));
+  let i=0;const next=()=>{if(i<list.length)img.src=list[i++];else img.parentElement.classList.add('img-failed')};
+  img.addEventListener('error',next);next();
+});
+// ---------- Site contact (set before launch; leave blank to send visitors to the Join section) ----------
+const SITE_CONTACT={whatsapp:'',phone:'',email:''}; // whatsapp/phone: digits with country code, e.g. '919876543210'
+(function(){const a=document.getElementById('contactLink');if(!a)return;const c=SITE_CONTACT;if(c.whatsapp){a.href='https://wa.me/'+c.whatsapp.replace(/\D/g,'');a.target='_blank';a.rel='noopener'}else if(c.phone)a.href='tel:+'+c.phone.replace(/\D/g,'');else if(c.email)a.href='mailto:'+c.email})();
+try{const saved=localStorage.getItem('fcLang');if(saved&&saved!=='en'&&LANGS.some(l=>l[0]===saved)){langSelect.value=saved;setLanguage(saved,false)}}catch(e){}
+</script>
+<script type="module">
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js';
+import { getAuth, signInWithEmailAndPassword, signOut, signInAnonymously, onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/11.0.1/firebase-auth.js';
+import { getFirestore, collection, addDoc, getDocs, query, where, orderBy, doc, getDoc, setDoc, updateDoc, deleteDoc, serverTimestamp } from 'https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js';
+// Replace these values with the Firebase web app configuration from Firebase Console > Project settings.
+const firebaseConfig = { apiKey:'YOUR_API_KEY', authDomain:'YOUR_PROJECT.firebaseapp.com', projectId:'YOUR_PROJECT_ID', storageBucket:'YOUR_PROJECT.appspot.com', messagingSenderId:'YOUR_MESSAGING_SENDER_ID', appId:'YOUR_APP_ID' };
+let app,auth,db,ready=false;
+try{app=initializeApp(firebaseConfig);auth=getAuth(app);db=getFirestore(app);ready=!/YOUR_/.test(JSON.stringify(firebaseConfig));if(!ready)console.warn('FarmCircle: Firebase config is not set yet.')}catch(e){console.error('Firebase initialization error',e)}
+async function ensurePublicUser(){if(!auth.currentUser)await signInAnonymously(auth);return auth.currentUser}
+window.fcRegister=async ({role,details})=>{if(!ready)throw new Error('Registration is not available right now. Please try again later.');let user;try{user=await ensurePublicUser()}catch(e){console.error(e);throw new Error('Could not submit. Please check your connection and try again.')}const docData={uid:user.uid,role,details,status:'pending',createdAt:serverTimestamp(),createdAtClient:new Date().toISOString()};try{await addDoc(collection(db,'registrations'),docData)}catch(e){console.error(e);throw new Error('Could not submit. Please check your details and connection, then try again.')}};
+window.fcAdminLogin=async(email,password)=>{if(!ready)throw new Error('Firebase is not configured.');const credential=await signInWithEmailAndPassword(auth,email,password);const adminSnap=await getDoc(doc(db,'admins',credential.user.uid));if(!adminSnap.exists()){await signOut(auth);throw new Error('This account is not authorized as a FarmCircle admin.')} };
+window.fcAdminSignOut=async()=>{if(auth&&auth.currentUser&&auth.currentUser.isAnonymous)return;try{await signOut(auth)}catch(e){}};
+window.fcLoadRegistrations=async()=>{if(!auth?.currentUser)throw new Error('Please sign in again.');const snap=await getDocs(query(collection(db,'registrations'),orderBy('createdAt','desc')));return snap.docs.map(x=>({id:x.id,...x.data(),createdAt:x.data().createdAt?.toDate?.()?.toISOString()||x.data().createdAtClient||''}))};
+window.fcSetRegistrationStatus=async(id,status)=>{if(!['approved','pending'].includes(status))throw new Error('Invalid status');const rref=doc(db,'registrations',id);await updateDoc(rref,{status,approvedAt:status==='approved'?serverTimestamp():null});const snap=await getDoc(rref);if(snap.exists()){const r=snap.data();if(r.role==='farmer'&&status==='approved'){await updateDoc(rref,{marketplacePublished:true});const listingRef=doc(db,'farmerListings',id);const d=r.details||{};const publicDetails={};['Full name','Village / town','District','Crops grown','Expected harvest','Land area'].forEach(k=>{if(d[k])publicDetails[k]=d[k]});await setDoc(listingRef,{registrationId:id,role:'farmer',details:publicDetails,status:'approved',publishedAt:serverTimestamp()})}else if(r.role==='farmer'&&status==='pending'){await deleteDoc(doc(db,'farmerListings',id)).catch(()=>{})}}};
+window.fcDeleteRegistration=async(id)=>{await deleteDoc(doc(db,'registrations',id));await deleteDoc(doc(db,'farmerListings',id)).catch(()=>{})};
+window.fcLoadApprovedFarmers=async()=>{const snap=await getDocs(query(collection(db,'farmerListings'),where('status','==','approved')));return snap.docs.map(x=>({id:x.id,...x.data()}))};
+if(ready&&typeof renderApprovedFarmers==='function')renderApprovedFarmers();
+</script>
+</body></html>
