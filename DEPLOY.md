@@ -1,4 +1,4 @@
-# FarmCircle — deploy checklist
+ # Kisan Dukan — deploy checklist
 
 Files: `index.html` (site), `firestore.rules`, `vercel.json` (optional security headers).
 
